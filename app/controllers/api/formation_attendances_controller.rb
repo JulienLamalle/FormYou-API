@@ -1,5 +1,7 @@
-class FormationAttendancesController < ApplicationController
+class Api::FormationAttendancesController < ApplicationController
   before_action :set_formation_attendance, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :is_owner_or_admin, only: [:update, :destroy]
 
   # GET /formation_attendances
   def index
@@ -16,9 +18,9 @@ class FormationAttendancesController < ApplicationController
   # POST /formation_attendances
   def create
     @formation_attendance = FormationAttendance.new(formation_attendance_params)
-
+    @formation_attendance.user_id = current_user.id
     if @formation_attendance.save
-      render json: @formation_attendance, status: :created, location: @formation_attendance
+      render json: @formation_attendance, status: :created, location: @api_formation_attendance
     else
       render json: @formation_attendance.errors, status: :unprocessable_entity
     end
@@ -46,6 +48,14 @@ class FormationAttendancesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def formation_attendance_params
-      params.require(:formation_attendance).permit(:user_id, :formation_id, :formation_session_id)
+      params.require(:formation_attendance).permit(:formation_id, :formation_session_id)
+    end
+
+    def is_owner_or_admin
+      if current_user.role.name == "admin" || current_user.id == @formation_attendance.user_id
+        return true
+      else
+        render json: "you do not have the right to access this path", status: :unauthorized
+      end
     end
 end

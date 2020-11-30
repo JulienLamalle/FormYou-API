@@ -1,5 +1,7 @@
-class FormationCategoriesController < ApplicationController
+class Api::FormationCategoriesController < ApplicationController
   before_action :set_formation_category, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :is_admin, only: [:create, :update, :destroy]
 
   # GET /formation_categories
   def index
@@ -18,7 +20,7 @@ class FormationCategoriesController < ApplicationController
     @formation_category = FormationCategory.new(formation_category_params)
 
     if @formation_category.save
-      render json: @formation_category, status: :created, location: @formation_category
+      render json: @formation_category, status: :created, location: @api_formation_category
     else
       render json: @formation_category.errors, status: :unprocessable_entity
     end
@@ -47,5 +49,13 @@ class FormationCategoriesController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def formation_category_params
       params.require(:formation_category).permit(:formation_id, :category_id)
+    end
+
+    def is_admin
+      if current_user.role.name == "admin"
+        return true
+      else
+        render json: "you do not have the right to access this path", status: :unauthorized
+      end
     end
 end

@@ -1,4 +1,4 @@
-class RoomsController < ApplicationController
+class Api::RoomsController < ApplicationController
   before_action :set_room, only: [:show, :update, :destroy]
 
   # GET /rooms
@@ -18,7 +18,7 @@ class RoomsController < ApplicationController
     @room = Room.new(room_params)
 
     if @room.save
-      render json: @room, status: :created, location: @room
+      render json: @room, status: :created, location: @api_room
     else
       render json: @room.errors, status: :unprocessable_entity
     end
@@ -46,6 +46,6 @@ class RoomsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def room_params
-      params.require(:room).permit(:name, :capacity)
+      params.require(:room).permit(:name)
     end
 end
