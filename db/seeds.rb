@@ -43,7 +43,7 @@ end
 
 
 10.times do |i|
-  FormationSession.create(room:Room.all.sample, formation:Formation.all.sample, start_date:Time.now.to_i, end_date:Time.now.to_i + 3600*24, capacity:rand(1..20))
+  FormationSession.create(room:Room.all.sample, formation:Formation.all.sample, start_date:Time.now, end_date:Time.now + 3600*24, capacity:rand(1..20))
 end 
 
 10.times do |i|
