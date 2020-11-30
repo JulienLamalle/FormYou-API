@@ -9,7 +9,7 @@ class User < ApplicationRecord
 
   # VALIDATIONS
   validates :email, presence: true
-  validates :firstname, :lastname, :email, presence: true
+  validates :first_name, :last_name, :email, presence: true
 
   # ASSOCIATIONS
   has_many :formation_attendances 

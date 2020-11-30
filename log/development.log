@@ -523,3 +523,611 @@ Migrating to CreateCategories (20201130111330)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4374708436360505250)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.6ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 0"], ["created_at", "2020-11-30 12:18:19.316952"], ["updated_at", "2020-11-30 12:18:19.316952"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 1"], ["created_at", "2020-11-30 12:18:19.324127"], ["updated_at", "2020-11-30 12:18:19.324127"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.4ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 2"], ["created_at", "2020-11-30 12:18:19.330375"], ["updated_at", "2020-11-30 12:18:19.330375"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 3"], ["created_at", "2020-11-30 12:18:19.335200"], ["updated_at", "2020-11-30 12:18:19.335200"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 4"], ["created_at", "2020-11-30 12:18:19.339652"], ["updated_at", "2020-11-30 12:18:19.339652"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 5"], ["created_at", "2020-11-30 12:18:19.344260"], ["updated_at", "2020-11-30 12:18:19.344260"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 6"], ["created_at", "2020-11-30 12:18:19.349910"], ["updated_at", "2020-11-30 12:18:19.349910"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 7"], ["created_at", "2020-11-30 12:18:19.354816"], ["updated_at", "2020-11-30 12:18:19.354816"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 8"], ["created_at", "2020-11-30 12:18:19.359780"], ["updated_at", "2020-11-30 12:18:19.359780"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.2ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 9"], ["created_at", "2020-11-30 12:18:19.365099"], ["updated_at", "2020-11-30 12:18:19.365099"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mRoom Load (0.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.4ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.6ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.2ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 4]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 6]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 7]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.4ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 8]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 9]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 10]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (1.2ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 0"], ["created_at", "2020-11-30 12:20:08.618778"], ["updated_at", "2020-11-30 12:20:08.618778"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 1"], ["created_at", "2020-11-30 12:20:08.626391"], ["updated_at", "2020-11-30 12:20:08.626391"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 2"], ["created_at", "2020-11-30 12:20:08.633680"], ["updated_at", "2020-11-30 12:20:08.633680"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.2ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 3"], ["created_at", "2020-11-30 12:20:08.639971"], ["updated_at", "2020-11-30 12:20:08.639971"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.4ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 4"], ["created_at", "2020-11-30 12:20:08.644561"], ["updated_at", "2020-11-30 12:20:08.644561"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.5ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 5"], ["created_at", "2020-11-30 12:20:08.650761"], ["updated_at", "2020-11-30 12:20:08.650761"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 6"], ["created_at", "2020-11-30 12:20:08.656965"], ["updated_at", "2020-11-30 12:20:08.656965"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 7"], ["created_at", "2020-11-30 12:20:08.664662"], ["updated_at", "2020-11-30 12:20:08.664662"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 8"], ["created_at", "2020-11-30 12:20:08.672092"], ["updated_at", "2020-11-30 12:20:08.672092"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 9"], ["created_at", "2020-11-30 12:20:08.678926"], ["updated_at", "2020-11-30 12:20:08.678926"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mRole Load (1.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 11]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.4ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 12]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 13]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 14]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.2ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 15]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 16]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.4ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 17]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.2ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 18]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 19]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 20]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormation Load (0.3ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 0"], ["created_at", "2020-11-30 12:21:04.807684"], ["updated_at", "2020-11-30 12:21:04.807684"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 1"], ["created_at", "2020-11-30 12:21:04.812431"], ["updated_at", "2020-11-30 12:21:04.812431"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 2"], ["created_at", "2020-11-30 12:21:04.817513"], ["updated_at", "2020-11-30 12:21:04.817513"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 3"], ["created_at", "2020-11-30 12:21:04.822741"], ["updated_at", "2020-11-30 12:21:04.822741"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 4"], ["created_at", "2020-11-30 12:21:04.827742"], ["updated_at", "2020-11-30 12:21:04.827742"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 5"], ["created_at", "2020-11-30 12:21:04.832536"], ["updated_at", "2020-11-30 12:21:04.832536"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 6"], ["created_at", "2020-11-30 12:21:04.837161"], ["updated_at", "2020-11-30 12:21:04.837161"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 7"], ["created_at", "2020-11-30 12:21:04.843827"], ["updated_at", "2020-11-30 12:21:04.843827"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 8"], ["created_at", "2020-11-30 12:21:04.850846"], ["updated_at", "2020-11-30 12:21:04.850846"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 9"], ["created_at", "2020-11-30 12:21:04.857513"], ["updated_at", "2020-11-30 12:21:04.857513"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "marry_wyman@rath.name"], ["first_name", "Janette"], ["last_name", "Waelchi"], ["age", 72], ["encrypted_password", "$2a$12$2N/k577WOhhBVdB1y8NAkeRGd77bRz3gYB72UNn/O48/wHSOUpwje"], ["role_id", 26], ["created_at", "2020-11-30 12:21:05.273706"], ["updated_at", "2020-11-30 12:21:05.273706"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "ezekiel@hettinger.co"], ["first_name", "Phil"], ["last_name", "Bogisich"], ["age", 78], ["encrypted_password", "$2a$12$4biptIQlF897y4aYSn56G.GmDN79zr3otOr/cWpnX/exVHOrLUw7."], ["role_id", 21], ["created_at", "2020-11-30 12:21:05.537134"], ["updated_at", "2020-11-30 12:21:05.537134"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "ghislaine@mante.biz"], ["first_name", "Daryl"], ["last_name", "Nienow"], ["age", 37], ["encrypted_password", "$2a$12$95D0QBNNJ2SGjLkQOxmQOuoqr2PgXuZUZ4Rt4nwOQvuxd56n/iSQe"], ["role_id", 25], ["created_at", "2020-11-30 12:21:05.796318"], ["updated_at", "2020-11-30 12:21:05.796318"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "hsiu_lueilwitz@weimann.io"], ["first_name", "Zulma"], ["last_name", "Adams"], ["age", 82], ["encrypted_password", "$2a$12$fEgBb5PJ6iTRE4EkKq3BceKQf.669dctGPBhnbDfqVZr/93UBFBU6"], ["role_id", 30], ["created_at", "2020-11-30 12:21:06.058183"], ["updated_at", "2020-11-30 12:21:06.058183"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "issac.schmitt@sawayn.io"], ["first_name", "Lamar"], ["last_name", "Osinski"], ["age", 85], ["encrypted_password", "$2a$12$OX5dlkNRGGfGGj61AXQpUOk8nTLzvikSMJvYuFsrapa.kOCflnxFK"], ["role_id", 26], ["created_at", "2020-11-30 12:21:06.321116"], ["updated_at", "2020-11-30 12:21:06.321116"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "maximo@heathcote.co"], ["first_name", "Tyrone"], ["last_name", "Metz"], ["age", 65], ["encrypted_password", "$2a$12$.pLCnILCL/aHMDHXx0RGv.fvchvVeFpatDGp..wiNln205cVNuFgK"], ["role_id", 23], ["created_at", "2020-11-30 12:21:06.582856"], ["updated_at", "2020-11-30 12:21:06.582856"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "ping@klocko.co"], ["first_name", "Doyle"], ["last_name", "Wyman"], ["age", 66], ["encrypted_password", "$2a$12$o..WpwbafbsGI.dbGKx6O.4c817LV5Jin2jBe6KNtFNNoyZQGztim"], ["role_id", 24], ["created_at", "2020-11-30 12:21:06.842229"], ["updated_at", "2020-11-30 12:21:06.842229"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "randell@upton.org"], ["first_name", "Rocio"], ["last_name", "Bergstrom"], ["age", 26], ["encrypted_password", "$2a$12$FlXmGdrcTV4KgNupqOkse.F7OmoNcV0uz3bL50/x0YKxBkDiUpfle"], ["role_id", 25], ["created_at", "2020-11-30 12:21:07.126403"], ["updated_at", "2020-11-30 12:21:07.126403"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "walter@waelchi-bogan.io"], ["first_name", "Lesli"], ["last_name", "VonRueden"], ["age", 26], ["encrypted_password", "$2a$12$OMcg1Bnw9tu.P2c5wQS4muDscMLLkpKLSUnrW4s/NdvnrKj7fc8eC"], ["role_id", 27], ["created_at", "2020-11-30 12:21:07.383532"], ["updated_at", "2020-11-30 12:21:07.383532"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "latrina_price@medhurst.name"], ["first_name", "Daisy"], ["last_name", "Cummerata"], ["age", 97], ["encrypted_password", "$2a$12$pZDN5gX0Jgz7GxmcucPaKuY.qhCooZVc3q9cb3q3/aEKToMTeDnFK"], ["role_id", 29], ["created_at", "2020-11-30 12:21:07.640107"], ["updated_at", "2020-11-30 12:21:07.640107"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (2.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 21]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 22]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 23]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.2ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 24]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 25]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 26]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 27]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 28]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 29]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 30]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.4ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 0"], ["created_at", "2020-11-30 12:21:42.772219"], ["updated_at", "2020-11-30 12:21:42.772219"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 1"], ["created_at", "2020-11-30 12:21:42.777396"], ["updated_at", "2020-11-30 12:21:42.777396"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 2"], ["created_at", "2020-11-30 12:21:42.782233"], ["updated_at", "2020-11-30 12:21:42.782233"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 3"], ["created_at", "2020-11-30 12:21:42.787153"], ["updated_at", "2020-11-30 12:21:42.787153"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 4"], ["created_at", "2020-11-30 12:21:42.791962"], ["updated_at", "2020-11-30 12:21:42.791962"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 5"], ["created_at", "2020-11-30 12:21:42.799209"], ["updated_at", "2020-11-30 12:21:42.799209"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 6"], ["created_at", "2020-11-30 12:21:42.807344"], ["updated_at", "2020-11-30 12:21:42.807344"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 7"], ["created_at", "2020-11-30 12:21:42.815936"], ["updated_at", "2020-11-30 12:21:42.815936"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.2ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 8"], ["created_at", "2020-11-30 12:21:42.822534"], ["updated_at", "2020-11-30 12:21:42.822534"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.4ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 9"], ["created_at", "2020-11-30 12:21:42.828659"], ["updated_at", "2020-11-30 12:21:42.828659"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "dorathy@christiansen.biz"], ["first_name", "Granville"], ["last_name", "Paucek"], ["age", 91], ["encrypted_password", "$2a$12$EM8utJh0ZbEFenfaVH3Io.dF5PxpU9UA/LV.y/ndw4iRRSW/yarVK"], ["role_id", 40], ["created_at", "2020-11-30 12:21:43.251456"], ["updated_at", "2020-11-30 12:21:43.251456"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "nicolas@runolfsson-turner.biz"], ["first_name", "Iliana"], ["last_name", "Stiedemann"], ["age", 41], ["encrypted_password", "$2a$12$68NPyn/BzNrsfnz0WO7PY.6PwVXBPg1HAlAXA/y6t9RWRM35ft9ji"], ["role_id", 31], ["created_at", "2020-11-30 12:21:43.513804"], ["updated_at", "2020-11-30 12:21:43.513804"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "ella@thiel-wisoky.net"], ["first_name", "Mauricio"], ["last_name", "Parisian"], ["age", 79], ["encrypted_password", "$2a$12$E0ruDzw7Myvezg1njBqaXeJTA/wXq5RXJhbeMC5vCFQLWko.Dt6aK"], ["role_id", 32], ["created_at", "2020-11-30 12:21:43.777505"], ["updated_at", "2020-11-30 12:21:43.777505"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "marc.bednar@harber-batz.info"], ["first_name", "Andre"], ["last_name", "Dare"], ["age", 23], ["encrypted_password", "$2a$12$MaMhm3YREB2gUAMbRPRLqOYDK5MiuWnCEi.8f9Hkbkpun0V7ktgtK"], ["role_id", 40], ["created_at", "2020-11-30 12:21:44.039058"], ["updated_at", "2020-11-30 12:21:44.039058"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "trey@howe.com"], ["first_name", "Jenice"], ["last_name", "Ferry"], ["age", 44], ["encrypted_password", "$2a$12$4xJ3EXyoQNENcRfGnlYwQulTUvO3W6Cp.Xqv2psXBtJtl3YN6YeU6"], ["role_id", 33], ["created_at", "2020-11-30 12:21:44.301779"], ["updated_at", "2020-11-30 12:21:44.301779"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "dede_oconnell@robel.info"], ["first_name", "Erwin"], ["last_name", "Grady"], ["age", 69], ["encrypted_password", "$2a$12$JzOn1uwneaq0RF5rfphXiOv0uDoRU/vb8Z2AR5XgRJNUMCQBblTrK"], ["role_id", 33], ["created_at", "2020-11-30 12:21:44.568916"], ["updated_at", "2020-11-30 12:21:44.568916"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "kurtis@marquardt.org"], ["first_name", "Malcom"], ["last_name", "Feil"], ["age", 57], ["encrypted_password", "$2a$12$BIyu.O1yZhV6CJhHLaC/YuB8tyXYFAPFjaQymWEKRBUFETQV7k6Zq"], ["role_id", 40], ["created_at", "2020-11-30 12:21:44.827821"], ["updated_at", "2020-11-30 12:21:44.827821"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "micah@cremin.co"], ["first_name", "Linnea"], ["last_name", "O'Connell"], ["age", 39], ["encrypted_password", "$2a$12$NQGavXNWV31XWVnLo1d54OLZ1VRHLFUBhgEc5XGkgMYoSL44YEb8S"], ["role_id", 39], ["created_at", "2020-11-30 12:21:45.084924"], ["updated_at", "2020-11-30 12:21:45.084924"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "louetta.buckridge@ryan.net"], ["first_name", "Vivan"], ["last_name", "Franecki"], ["age", 91], ["encrypted_password", "$2a$12$0r/a2ymALRxtv96VndLGNuBUdfWX.fn2cLxcKokuk3xq2XKqIvdau"], ["role_id", 39], ["created_at", "2020-11-30 12:21:45.345797"], ["updated_at", "2020-11-30 12:21:45.345797"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "huong.gerhold@jacobi.biz"], ["first_name", "Tegan"], ["last_name", "Jakubowski"], ["age", 73], ["encrypted_password", "$2a$12$9mQR8XKHB99/gwUF7J6z8ug7ObYCPKq/eXvggMxUWLo/zb7ZavKbS"], ["role_id", 37], ["created_at", "2020-11-30 12:21:45.606314"], ["updated_at", "2020-11-30 12:21:45.606314"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.4ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 0"], ["description", "[\"doloribus\", \"iure\", \"eos\", \"rem\", \"quo\", \"possimus\", \"mollitia\", \"natus\", \"nostrum\", \"nisi\", \"incidunt\", \"nam\", \"voluptate\", \"vel\", \"ut\", \"assumenda\", \"amet\", \"modi\", \"sed\", \"molestias\"]"], ["created_at", "2020-11-30 12:21:45.619996"], ["updated_at", "2020-11-30 12:21:45.619996"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 1"], ["description", "[\"illum\", \"corporis\", \"reprehenderit\", \"itaque\", \"at\", \"eveniet\", \"est\", \"inventore\", \"asperiores\", \"fugit\", \"sunt\", \"consequatur\", \"id\", \"aut\", \"aspernatur\", \"exercitationem\", \"voluptas\", \"omnis\", \"delectus\", \"et\"]"], ["created_at", "2020-11-30 12:21:45.627817"], ["updated_at", "2020-11-30 12:21:45.627817"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.5ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 2"], ["description", "[\"doloremque\", \"eum\", \"reiciendis\", \"minima\", \"fugit\", \"eveniet\", \"distinctio\", \"soluta\", \"ea\", \"odit\", \"dolor\", \"perferendis\", \"ab\", \"esse\", \"iste\", \"cupiditate\", \"quisquam\", \"molestias\", \"ipsa\", \"ducimus\"]"], ["created_at", "2020-11-30 12:21:45.635961"], ["updated_at", "2020-11-30 12:21:45.635961"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.5ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 3"], ["description", "[\"ducimus\", \"repudiandae\", \"repellendus\", \"accusamus\", \"omnis\", \"mollitia\", \"vel\", \"voluptate\", \"sit\", \"voluptatum\", \"dolore\", \"et\", \"corporis\", \"laborum\", \"sint\", \"eos\", \"id\", \"aut\", \"et\", \"maiores\"]"], ["created_at", "2020-11-30 12:21:45.648096"], ["updated_at", "2020-11-30 12:21:45.648096"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.4ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 4"], ["description", "[\"in\", \"delectus\", \"aut\", \"optio\", \"vero\", \"et\", \"quasi\", \"iure\", \"amet\", \"modi\", \"fugit\", \"dolorem\", \"eum\", \"voluptas\", \"cumque\", \"ut\", \"sit\", \"repudiandae\", \"voluptas\", \"dolores\"]"], ["created_at", "2020-11-30 12:21:45.660147"], ["updated_at", "2020-11-30 12:21:45.660147"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 5"], ["description", "[\"dolore\", \"blanditiis\", \"reiciendis\", \"maxime\", \"enim\", \"consequatur\", \"commodi\", \"ad\", \"in\", \"sit\", \"mollitia\", \"quaerat\", \"natus\", \"tempora\", \"non\", \"excepturi\", \"omnis\", \"in\", \"velit\", \"accusantium\"]"], ["created_at", "2020-11-30 12:21:45.671865"], ["updated_at", "2020-11-30 12:21:45.671865"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.4ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 6"], ["description", "[\"aut\", \"earum\", \"voluptatem\", \"ad\", \"ea\", \"pariatur\", \"non\", \"dolorem\", \"laboriosam\", \"quaerat\", \"ab\", \"ullam\", \"rerum\", \"et\", \"reprehenderit\", \"sint\", \"corrupti\", \"qui\", \"quis\", \"aut\"]"], ["created_at", "2020-11-30 12:21:45.679830"], ["updated_at", "2020-11-30 12:21:45.679830"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 7"], ["description", "[\"officia\", \"eos\", \"soluta\", \"omnis\", \"tenetur\", \"fugit\", \"quis\", \"non\", \"deserunt\", \"nostrum\", \"dolorum\", \"excepturi\", \"non\", \"sed\", \"in\", \"praesentium\", \"nemo\", \"minima\", \"quia\", \"autem\"]"], ["created_at", "2020-11-30 12:21:45.688626"], ["updated_at", "2020-11-30 12:21:45.688626"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.4ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 8"], ["description", "[\"vel\", \"eveniet\", \"voluptatibus\", \"qui\", \"est\", \"qui\", \"omnis\", \"nesciunt\", \"rerum\", \"aut\", \"et\", \"explicabo\", \"excepturi\", \"non\", \"eius\", \"ut\", \"velit\", \"saepe\", \"necessitatibus\", \"quo\"]"], ["created_at", "2020-11-30 12:21:45.698012"], ["updated_at", "2020-11-30 12:21:45.698012"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 9"], ["description", "[\"at\", \"labore\", \"ut\", \"ad\", \"pariatur\", \"minus\", \"id\", \"atque\", \"ipsam\", \"quas\", \"quis\", \"aut\", \"quia\", \"natus\", \"eveniet\", \"quia\", \"sed\", \"odio\", \"sit\", \"et\"]"], ["created_at", "2020-11-30 12:21:45.705628"], ["updated_at", "2020-11-30 12:21:45.705628"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 0"], ["created_at", "2020-11-30 12:21:45.729930"], ["updated_at", "2020-11-30 12:21:45.729930"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 1"], ["created_at", "2020-11-30 12:21:45.737673"], ["updated_at", "2020-11-30 12:21:45.737673"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 2"], ["created_at", "2020-11-30 12:21:45.744993"], ["updated_at", "2020-11-30 12:21:45.744993"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 3"], ["created_at", "2020-11-30 12:21:45.753440"], ["updated_at", "2020-11-30 12:21:45.753440"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 4"], ["created_at", "2020-11-30 12:21:45.762469"], ["updated_at", "2020-11-30 12:21:45.762469"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 5"], ["created_at", "2020-11-30 12:21:45.770015"], ["updated_at", "2020-11-30 12:21:45.770015"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 6"], ["created_at", "2020-11-30 12:21:45.775190"], ["updated_at", "2020-11-30 12:21:45.775190"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 7"], ["created_at", "2020-11-30 12:21:45.780421"], ["updated_at", "2020-11-30 12:21:45.780421"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 8"], ["created_at", "2020-11-30 12:21:45.786423"], ["updated_at", "2020-11-30 12:21:45.786423"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 9"], ["created_at", "2020-11-30 12:21:45.793512"], ["updated_at", "2020-11-30 12:21:45.793512"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (2.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.2ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 4]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.2ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.2ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 6]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 7]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 8]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 9]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 10]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.2ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 31]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 32]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.4ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 33]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 34]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 35]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 36]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 37]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.3ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 38]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.4ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 39]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.2ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 40]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormation Load (0.5ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 2]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 3]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 4]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 5]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 6]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 7]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 8]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 9]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 10]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.4ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 0"], ["created_at", "2020-11-30 12:23:22.822427"], ["updated_at", "2020-11-30 12:23:22.822427"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 1"], ["created_at", "2020-11-30 12:23:22.827772"], ["updated_at", "2020-11-30 12:23:22.827772"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 2"], ["created_at", "2020-11-30 12:23:22.832686"], ["updated_at", "2020-11-30 12:23:22.832686"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 3"], ["created_at", "2020-11-30 12:23:22.837923"], ["updated_at", "2020-11-30 12:23:22.837923"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 4"], ["created_at", "2020-11-30 12:23:22.842642"], ["updated_at", "2020-11-30 12:23:22.842642"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 5"], ["created_at", "2020-11-30 12:23:22.847447"], ["updated_at", "2020-11-30 12:23:22.847447"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 6"], ["created_at", "2020-11-30 12:23:22.853432"], ["updated_at", "2020-11-30 12:23:22.853432"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 7"], ["created_at", "2020-11-30 12:23:22.859457"], ["updated_at", "2020-11-30 12:23:22.859457"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 8"], ["created_at", "2020-11-30 12:23:22.866193"], ["updated_at", "2020-11-30 12:23:22.866193"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Role user 9"], ["created_at", "2020-11-30 12:23:22.871134"], ["updated_at", "2020-11-30 12:23:22.871134"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "curtis@konopelski.name"], ["first_name", "Jayme"], ["last_name", "Turcotte"], ["age", 39], ["encrypted_password", "$2a$12$/w/.YBPFvZpULuyNzORA6.NLGkecF/PzFCljwF23EyuGkAjLHQtxa"], ["role_id", 9], ["created_at", "2020-11-30 12:23:23.312691"], ["updated_at", "2020-11-30 12:23:23.312691"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "eldridge@schoen.biz"], ["first_name", "Marilu"], ["last_name", "Kuphal"], ["age", 81], ["encrypted_password", "$2a$12$SLswGVFopOj2BlPMXIWUUu8Ie7GxuDQrBKbNLJGslJiK.wV.yziBe"], ["role_id", 2], ["created_at", "2020-11-30 12:23:23.577891"], ["updated_at", "2020-11-30 12:23:23.577891"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "debby@marks-bogan.org"], ["first_name", "Angelique"], ["last_name", "Ebert"], ["age", 58], ["encrypted_password", "$2a$12$/Nk4ISBggO2fvLSb1QD.9efdatiSFuQZvM0jNqasV0x7sDBnShZLW"], ["role_id", 2], ["created_at", "2020-11-30 12:23:23.850686"], ["updated_at", "2020-11-30 12:23:23.850686"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "augustus@kuhic-skiles.info"], ["first_name", "Carlota"], ["last_name", "Emard"], ["age", 35], ["encrypted_password", "$2a$12$EtYeAf7fjSeSo/0156am/OdVK2XfsEx5FqASvo.I1AfLMYophoHtu"], ["role_id", 6], ["created_at", "2020-11-30 12:23:24.115208"], ["updated_at", "2020-11-30 12:23:24.115208"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "lawrence@langworth.name"], ["first_name", "Vi"], ["last_name", "Blick"], ["age", 92], ["encrypted_password", "$2a$12$NIYVW.ukLvHizAH60342ZeqeBI48RWHWOk3Oq.p5D8mwOAukvlJka"], ["role_id", 10], ["created_at", "2020-11-30 12:23:24.375888"], ["updated_at", "2020-11-30 12:23:24.375888"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "jarod_schroeder@denesik.net"], ["first_name", "Rocky"], ["last_name", "Schaefer"], ["age", 95], ["encrypted_password", "$2a$12$vDqktW9mqSaGKxYmQe.s/OfdR/ZP4ZwEu6ciadz7dcy.hCFp77JMW"], ["role_id", 8], ["created_at", "2020-11-30 12:23:24.632330"], ["updated_at", "2020-11-30 12:23:24.632330"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "raven@mills.biz"], ["first_name", "Santos"], ["last_name", "Gulgowski"], ["age", 84], ["encrypted_password", "$2a$12$nDv9pNc5v/Di4UHZ0Ljh7O8h1OCsKdST7EfHC2TpzvCCBp.m35XNG"], ["role_id", 6], ["created_at", "2020-11-30 12:23:24.891220"], ["updated_at", "2020-11-30 12:23:24.891220"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "constance_friesen@connelly.biz"], ["first_name", "Darrin"], ["last_name", "Effertz"], ["age", 22], ["encrypted_password", "$2a$12$7SBV3EVotiAvZ9Xplf1suOCIsIaIxZpl9BLONd6zxdpqESdp5.BqS"], ["role_id", 6], ["created_at", "2020-11-30 12:23:25.150017"], ["updated_at", "2020-11-30 12:23:25.150017"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "alysa@spencer.info"], ["first_name", "Gemma"], ["last_name", "Beatty"], ["age", 61], ["encrypted_password", "$2a$12$80X3QMW4rVCg71UMLXpXX.3euZpuBoZo/Up0/Yg5QjUmX0J6Mj9Qe"], ["role_id", 1], ["created_at", "2020-11-30 12:23:25.408704"], ["updated_at", "2020-11-30 12:23:25.408704"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "beaulah.torphy@renner.info"], ["first_name", "Son"], ["last_name", "Vandervort"], ["age", 84], ["encrypted_password", "$2a$12$a78RUUCo5bvEuLRJWaCGc.3VsxZzUh6SuJDDwaGYNadJeZ7EZxBSW"], ["role_id", 4], ["created_at", "2020-11-30 12:23:25.666695"], ["updated_at", "2020-11-30 12:23:25.666695"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 0"], ["description", "[\"reiciendis\", \"inventore\", \"ducimus\", \"ratione\", \"architecto\", \"ut\", \"labore\", \"dicta\", \"quo\", \"numquam\", \"laboriosam\", \"non\", \"ut\", \"nobis\", \"assumenda\", \"et\", \"eum\", \"voluptas\", \"repellat\", \"ab\"]"], ["created_at", "2020-11-30 12:23:25.673927"], ["updated_at", "2020-11-30 12:23:25.673927"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 1"], ["description", "[\"fuga\", \"rerum\", \"quidem\", \"exercitationem\", \"sint\", \"excepturi\", \"est\", \"distinctio\", \"tempora\", \"reiciendis\", \"aut\", \"consequuntur\", \"qui\", \"aut\", \"nisi\", \"qui\", \"qui\", \"ipsa\", \"et\", \"in\"]"], ["created_at", "2020-11-30 12:23:25.678971"], ["updated_at", "2020-11-30 12:23:25.678971"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 2"], ["description", "[\"temporibus\", \"laboriosam\", \"perferendis\", \"magni\", \"aut\", \"tempora\", \"ut\", \"maxime\", \"quia\", \"earum\", \"quo\", \"sequi\", \"corporis\", \"et\", \"voluptatem\", \"minima\", \"quam\", \"sint\", \"amet\", \"vel\"]"], ["created_at", "2020-11-30 12:23:25.683673"], ["updated_at", "2020-11-30 12:23:25.683673"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 3"], ["description", "[\"et\", \"distinctio\", \"ratione\", \"deleniti\", \"consequatur\", \"accusantium\", \"et\", \"earum\", \"ea\", \"qui\", \"rerum\", \"odio\", \"cum\", \"porro\", \"omnis\", \"eos\", \"esse\", \"eius\", \"voluptatem\", \"nobis\"]"], ["created_at", "2020-11-30 12:23:25.689008"], ["updated_at", "2020-11-30 12:23:25.689008"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 4"], ["description", "[\"qui\", \"doloribus\", \"aut\", \"cumque\", \"soluta\", \"quidem\", \"culpa\", \"dolorem\", \"velit\", \"quae\", \"illo\", \"sunt\", \"vel\", \"odio\", \"sit\", \"sed\", \"et\", \"laboriosam\", \"tenetur\", \"praesentium\"]"], ["created_at", "2020-11-30 12:23:25.693855"], ["updated_at", "2020-11-30 12:23:25.693855"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 5"], ["description", "[\"illo\", \"et\", \"ad\", \"ea\", \"nobis\", \"sit\", \"facere\", \"veniam\", \"voluptatem\", \"rerum\", \"incidunt\", \"eum\", \"dolor\", \"recusandae\", \"aut\", \"minus\", \"natus\", \"et\", \"quia\", \"voluptatibus\"]"], ["created_at", "2020-11-30 12:23:25.699493"], ["updated_at", "2020-11-30 12:23:25.699493"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 6"], ["description", "[\"aliquam\", \"dolores\", \"excepturi\", \"consequuntur\", \"et\", \"incidunt\", \"ex\", \"vitae\", \"dolorem\", \"quia\", \"qui\", \"et\", \"aut\", \"odit\", \"modi\", \"natus\", \"velit\", \"non\", \"quis\", \"reprehenderit\"]"], ["created_at", "2020-11-30 12:23:25.705529"], ["updated_at", "2020-11-30 12:23:25.705529"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.4ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 7"], ["description", "[\"ea\", \"non\", \"dolorum\", \"fuga\", \"dicta\", \"est\", \"ullam\", \"eaque\", \"corporis\", \"pariatur\", \"rerum\", \"aliquid\", \"iusto\", \"consequatur\", \"ab\", \"laudantium\", \"animi\", \"sunt\", \"saepe\", \"voluptates\"]"], ["created_at", "2020-11-30 12:23:25.710821"], ["updated_at", "2020-11-30 12:23:25.710821"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.3ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 8"], ["description", "[\"a\", \"facilis\", \"deleniti\", \"veniam\", \"animi\", \"iste\", \"fugiat\", \"molestiae\", \"quia\", \"voluptatem\", \"consequuntur\", \"nihil\", \"laudantium\", \"et\", \"eaque\", \"laboriosam\", \"ut\", \"qui\", \"molestias\", \"est\"]"], ["created_at", "2020-11-30 12:23:25.715735"], ["updated_at", "2020-11-30 12:23:25.715735"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Create (0.4ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Super formation 9"], ["description", "[\"exercitationem\", \"expedita\", \"qui\", \"autem\", \"nemo\", \"qui\", \"non\", \"et\", \"et\", \"et\", \"dolore\", \"dolorum\", \"laboriosam\", \"non\", \"sed\", \"commodi\", \"explicabo\", \"quaerat\", \"eos\", \"qui\"]"], ["created_at", "2020-11-30 12:23:25.727622"], ["updated_at", "2020-11-30 12:23:25.727622"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 0"], ["created_at", "2020-11-30 12:23:25.733102"], ["updated_at", "2020-11-30 12:23:25.733102"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 1"], ["created_at", "2020-11-30 12:23:25.738284"], ["updated_at", "2020-11-30 12:23:25.738284"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 2"], ["created_at", "2020-11-30 12:23:25.743106"], ["updated_at", "2020-11-30 12:23:25.743106"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 3"], ["created_at", "2020-11-30 12:23:25.748516"], ["updated_at", "2020-11-30 12:23:25.748516"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 4"], ["created_at", "2020-11-30 12:23:25.753447"], ["updated_at", "2020-11-30 12:23:25.753447"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 5"], ["created_at", "2020-11-30 12:23:25.757863"], ["updated_at", "2020-11-30 12:23:25.757863"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 6"], ["created_at", "2020-11-30 12:23:25.764402"], ["updated_at", "2020-11-30 12:23:25.764402"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 7"], ["created_at", "2020-11-30 12:23:25.772255"], ["updated_at", "2020-11-30 12:23:25.772255"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 8"], ["created_at", "2020-11-30 12:23:25.779316"], ["updated_at", "2020-11-30 12:23:25.779316"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 9"], ["created_at", "2020-11-30 12:23:25.786066"], ["updated_at", "2020-11-30 12:23:25.786066"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
