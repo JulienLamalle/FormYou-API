@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  default_url_options :host => "http://localhost:3000/"
+  default_url_options :host => "https://form-you-api-staging.herokuapp.com/"
 
 
   namespace :api, defaults: { format: :json } do
