@@ -31,14 +31,33 @@ end
 
 
 
-10.times do |i|
- Formation.create(title: "Super formation #{i}",  description:Faker::Lorem.words(number: 20) )
+10.times do
+ Formation.create(title: "Super formation",  description:Faker::Lorem.words(number: 20) )
 end 
 
 
 10.times do |i|
-  Room.create(name: "Room formation #{i}" )
+  Room.create(name: "Room formation #{i}")
 end 
 
 
-puts "Flibustier created"
+
+10.times do |i|
+  FormationSession.create(room:Room.all.sample, formation:Formation.all.sample, start_date:Time.now.to_i, end_date:Time.now.to_i + 3600*24, capacity:rand(1..20))
+end 
+
+10.times do |i|
+  FormationAttendance.create(user:User.all.sample, formation:Formation.all.sample, formation_session:FormationSession.all.sample)
+end 
+
+
+10.times do |i|
+  Category.create(name:"category test #{i}")
+end 
+
+10.times do |i|
+  FormationCategory.create(category:Category.all.sample, formation:Formation.all.sample)
+end 
+
+
+

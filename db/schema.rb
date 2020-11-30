@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(version: 2020_11_30_111330) do
 
   create_table "formation_sessions", force: :cascade do |t|
     t.datetime "start_date"
-    t.string "end_date"
-    t.string "timestamp"
+    t.datetime "end_date"
+    t.integer "capacity"
     t.bigint "room_id", null: false
     t.bigint "formation_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 2020_11_30_111330) do
 
   create_table "formations", force: :cascade do |t|
     t.string "title"
-    t.integer "capacity"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -75,7 +74,6 @@ ActiveRecord::Schema.define(version: 2020_11_30_111330) do
 
   create_table "rooms", force: :cascade do |t|
     t.string "name"
-    t.integer "capacity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -98,5 +96,4 @@ ActiveRecord::Schema.define(version: 2020_11_30_111330) do
     t.index ["role_id"], name: "index_users_on_role_id"
   end
 
-  add_foreign_key "formation_attendances", "users"
 end

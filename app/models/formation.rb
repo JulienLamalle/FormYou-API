@@ -9,5 +9,4 @@ class Formation < ApplicationRecord
 
    # VALIDATIONS
    validates :title, :description, presence: true
-   validates :capacity, numericality: {greater_than:0, less_than_or_equal_to:20}, presence: true
 end
