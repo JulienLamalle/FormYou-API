@@ -2,12 +2,19 @@ User.delete_all
 Room.destroy_all
 Role.destroy_all
 Formation.destroy_all
+FormationSession.destroy_all
+FormationAttendance.destroy_all
+Category.destroy_all
+FormationCategory.destroy_all
 
 User.reset_pk_sequence
 Room.reset_pk_sequence
 Role.reset_pk_sequence
 Formation.reset_pk_sequence
-
+FormationSession.reset_pk_sequence
+FormationAttendance.reset_pk_sequence
+Category.reset_pk_sequence
+FormationCategory.reset_pk_sequence
 
 require 'faker'
 
