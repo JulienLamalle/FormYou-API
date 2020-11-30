@@ -11,8 +11,8 @@ Formation.reset_pk_sequence
 
 require 'faker'
 
-10.times do |i|
-  Role.create(name: "Role user #{i}" )
+10.times do
+  Role.create(name: Faker::Games::DnD.klass)
 end 
 
 
