@@ -7,7 +7,6 @@ User.delete_all
     email: Faker::Internet.unique.email,
     password: "azerty"
   )
-  user.username = user.first_name.downcase + "_" + user.last_name.downcase 
   user.save
   puts "user #{user.id} created"
 end
