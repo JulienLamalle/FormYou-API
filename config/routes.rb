@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :categories
+  resources :formation_sessions
+  resources :formation_attendances
+  resources :formation_categories
+  resources :formations
+  resources :rooms
+  resources :roles
   default_url_options :host => "http://localhost:3000/"
 
 
