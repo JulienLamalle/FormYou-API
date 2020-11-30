@@ -4,7 +4,6 @@ class CreateFormations < ActiveRecord::Migration[6.0]
       t.string :title
       t.integer :capacity
       t.string :description
-
       t.timestamps
     end
   end

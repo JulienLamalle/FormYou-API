@@ -4,8 +4,8 @@ class CreateFormationSessions < ActiveRecord::Migration[6.0]
       t.timestamp :start_date
       t.string :end_date
       t.string :timestamp
-      t.references :room, null: false, foreign_key: true
-      t.references :formation, null: false, foreign_key: true
+      t.belongs_to :room, null: false, index: true
+      t.belongs_to :formation, null: false, index: true
       t.timestamps
     end
   end
