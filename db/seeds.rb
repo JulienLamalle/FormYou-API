@@ -18,9 +18,9 @@ FormationCategory.reset_pk_sequence
 
 require 'faker'
 
-10.times do
-  Role.create(name: Faker::Games::DnD.klass)
-end 
+Role.create(name: "student")
+Role.create(name: "admin")
+Role.create(name: "teacher")
 
 
 10.times do
@@ -30,11 +30,30 @@ end
     email: Faker::Internet.unique.email,
     age: rand(18..99),
     password: "azerty",
-    role:  Role.all.sample
+    role:  Role.first
   )
   user.save
   puts "user #{user.id} created"
 end
+
+User.create(
+  first_name: "admin",
+  last_name: "admin",
+  email: "admin@yopmail.com",
+  age: rand(18..99),
+  password: "azerty",
+  role:  Role.find_by(name: "admin")
+)
+
+User.create(
+  first_name: "teacher",
+  last_name: "teacher",
+  email: "teacher@yopmail.com",
+  age: rand(35..99),
+  password: "azerty",
+  role:  Role.last
+)
+
 
 
 

@@ -1,7 +1,8 @@
 class Api::FormationAttendancesController < ApplicationController
   before_action :set_formation_attendance, only: [:show, :update, :destroy]
   before_action :authenticate_user!, only: [:create, :update, :destroy]
-  before_action :is_owner_or_admin, only: [:update, :destroy]
+  before_action :can_i_destroy, only: [:destroy]
+  before_action :can_i_update, only: [:update]
 
   # GET /formation_attendances
   def index
@@ -48,11 +49,23 @@ class Api::FormationAttendancesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def formation_attendance_params
-      params.require(:formation_attendance).permit(:formation_id, :formation_session_id)
+      if current_user.role.name == "teacher"
+        params.require(:formation_attendance).permit(:mark)
+      else
+        params.require(:formation_attendance).permit(:formation_id, :formation_session_id, :user_id)
+      end
     end
 
-    def is_owner_or_admin
+    def can_i_destroy
       if current_user.role.name == "admin" || current_user.id == @formation_attendance.user_id
+        return true
+      else
+        render json: "you do not have the right to access this path", status: :unauthorized
+      end
+    end
+
+    def can_i_update
+      if current_user.role.name == "admin" || current_user.role.name == "teacher"
         return true
       else
         render json: "you do not have the right to access this path", status: :unauthorized

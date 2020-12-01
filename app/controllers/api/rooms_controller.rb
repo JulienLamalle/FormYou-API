@@ -1,5 +1,7 @@
 class Api::RoomsController < ApplicationController
   before_action :set_room, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :is_admin
 
   # GET /rooms
   def index
@@ -47,5 +49,13 @@ class Api::RoomsController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def room_params
       params.require(:room).permit(:name)
+    end
+
+    def is_admin
+      if current_user.role.name == "admin"
+        return true
+      else
+        render json: "you do not have the right to access this path", status: :unauthorized
+      end
     end
 end
