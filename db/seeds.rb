@@ -58,7 +58,7 @@ User.create(
 
 
 10.times do
- Formation.create(title: "Super formation",  description:Faker::Lorem.words(number: 20) )
+ Formation.create(title: "Super formation",  description:Faker::Lorem.words(number: 20), teacher_id: User.last.id)
 end 
 
 
