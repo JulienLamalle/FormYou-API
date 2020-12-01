@@ -30,7 +30,8 @@ Role.create(name: "teacher")
     email: Faker::Internet.unique.email,
     age: rand(18..99),
     password: "azerty",
-    role:  Role.first
+    role:  Role.first,
+    is_validated: true
   )
   user.save
   puts "user #{user.id} created"
@@ -42,7 +43,8 @@ User.create(
   email: "admin@yopmail.com",
   age: rand(18..99),
   password: "azerty",
-  role:  Role.find_by(name: "admin")
+  role:  Role.find_by(name: "admin"),
+  is_validated: true
 )
 
 User.create(
@@ -51,7 +53,8 @@ User.create(
   email: "teacher@yopmail.com",
   age: rand(35..99),
   password: "azerty",
-  role:  Role.last
+  role:  Role.last,
+  is_validated: true
 )
 
 

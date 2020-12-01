@@ -37,7 +37,8 @@ class Api::UsersController < Api::BaseController
       :email,
       :password,
       :age,
-      :role_id)
+      :role_id,
+      :is_validated)
     else
       params.require(:user).permit(
         :first_name,
