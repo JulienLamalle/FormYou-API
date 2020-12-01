@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_30_111330) do
+ActiveRecord::Schema.define(version: 2020_12_01_102229) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_111330) do
     t.bigint "formation_session_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "mark"
     t.index ["formation_id"], name: "index_formation_attendances_on_formation_id"
     t.index ["formation_session_id"], name: "index_formation_attendances_on_formation_session_id"
     t.index ["user_id"], name: "index_formation_attendances_on_user_id"
@@ -58,6 +59,8 @@ ActiveRecord::Schema.define(version: 2020_11_30_111330) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "teacher_id"
+    t.index ["teacher_id"], name: "index_formations_on_teacher_id"
   end
 
   create_table "jwt_denylist", force: :cascade do |t|

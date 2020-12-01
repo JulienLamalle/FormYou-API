@@ -18,5 +18,6 @@ class User < ApplicationRecord
   has_many :rooms, through: :formation_sessions
   belongs_to :role
   has_many :rooms, through: :formation_sessions
+  has_many :formations, :foreign_key => 'teacher_id'
   
 end

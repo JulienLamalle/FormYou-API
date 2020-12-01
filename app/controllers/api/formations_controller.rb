@@ -1,5 +1,7 @@
-class FormationsController < ApplicationController
+class Api::FormationsController < ApplicationController
   before_action :set_formation, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :is_admin, only: [:create, :update, :destroy]
 
   # GET /formations
   def index
@@ -18,7 +20,7 @@ class FormationsController < ApplicationController
     @formation = Formation.new(formation_params)
 
     if @formation.save
-      render json: @formation, status: :created, location: @formation
+      render json: @formation, status: :created, location: @api_formation
     else
       render json: @formation.errors, status: :unprocessable_entity
     end
@@ -46,6 +48,14 @@ class FormationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def formation_params
-      params.require(:formation).permit(:title, :capacity, :description)
+      params.require(:formation).permit(:title, :description, :teacher_id)
+    end
+
+    def is_admin
+      if current_user.role.name == "admin"
+        return true
+      else
+        render json: "You have to be an administrator to do this stuff", status: :unauthorized
+      end
     end
 end

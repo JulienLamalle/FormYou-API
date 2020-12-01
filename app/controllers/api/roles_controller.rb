@@ -1,5 +1,7 @@
-class RolesController < ApplicationController
+class Api::RolesController < ApplicationController
   before_action :set_role, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :is_admin
 
   # GET /roles
   def index
@@ -18,7 +20,7 @@ class RolesController < ApplicationController
     @role = Role.new(role_params)
 
     if @role.save
-      render json: @role, status: :created, location: @role
+      render json: @role, status: :created, location: @api_role
     else
       render json: @role.errors, status: :unprocessable_entity
     end
@@ -47,5 +49,13 @@ class RolesController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def role_params
       params.require(:role).permit(:name)
+    end
+
+    def is_admin
+      if current_user.role.name == "admin"
+        return true
+      else
+        render json: "You have to be an administrator to do this stuff", status: :unauthorized
+      end
     end
 end

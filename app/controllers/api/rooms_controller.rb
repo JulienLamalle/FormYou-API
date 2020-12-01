@@ -1,5 +1,7 @@
-class RoomsController < ApplicationController
+class Api::RoomsController < ApplicationController
   before_action :set_room, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :is_admin
 
   # GET /rooms
   def index
@@ -18,7 +20,7 @@ class RoomsController < ApplicationController
     @room = Room.new(room_params)
 
     if @room.save
-      render json: @room, status: :created, location: @room
+      render json: @room, status: :created, location: @api_room
     else
       render json: @room.errors, status: :unprocessable_entity
     end
@@ -46,6 +48,14 @@ class RoomsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def room_params
-      params.require(:room).permit(:name, :capacity)
+      params.require(:room).permit(:name)
+    end
+
+    def is_admin
+      if current_user.role.name == "admin"
+        return true
+      else
+        render json: "You have to be an administrator to do this stuff", status: :unauthorized
+      end
     end
 end
