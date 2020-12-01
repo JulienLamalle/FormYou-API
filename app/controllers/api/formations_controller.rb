@@ -48,7 +48,7 @@ class Api::FormationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def formation_params
-      params.require(:formation).permit(:title, :description)
+      params.require(:formation).permit(:title, :description, :teacher_id)
     end
 
     def is_admin
