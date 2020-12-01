@@ -3,6 +3,7 @@ class Api::FormationAttendancesController < ApplicationController
   before_action :authenticate_user!, only: [:create, :update, :destroy]
   before_action :can_i_destroy, only: [:destroy]
   before_action :can_i_update, only: [:update]
+  before_action :is_validated
 
   # GET /formation_attendances
   def index
@@ -60,7 +61,7 @@ class Api::FormationAttendancesController < ApplicationController
       if current_user.role.name == "admin" || current_user.id == @formation_attendance.user_id
         return true
       else
-        render json: "you do not have the right to access this path", status: :unauthorized
+        render json: "You cannot cancel this registration if you are not an administrator or the registrant.", status: :unauthorized
       end
     end
 
@@ -68,7 +69,15 @@ class Api::FormationAttendancesController < ApplicationController
       if current_user.role.name == "admin" || current_user.role.name == "teacher"
         return true
       else
-        render json: "you do not have the right to access this path", status: :unauthorized
+        render json: "You cannot update this registration if you are not an administrator or the session teacher.", status: :unauthorized
+      end
+    end
+
+    def is_validated 
+      if User.find(current_user.id).is_validated
+        return true
+      else
+        render json: 'You cannot register to a formation until your account is not validated by an administrator.', status: :unauthorized
       end
     end
 end

@@ -55,7 +55,7 @@ class Api::RolesController < ApplicationController
       if current_user.role.name == "admin"
         return true
       else
-        render json: "you do not have the right to access this path", status: :unauthorized
+        render json: "You have to be an administrator to do this stuff", status: :unauthorized
       end
     end
 end

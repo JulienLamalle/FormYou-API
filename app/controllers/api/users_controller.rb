@@ -52,7 +52,7 @@ class Api::UsersController < Api::BaseController
     if current_user.role.name == "admin" || current_user.id == @user.id
       return true
     else
-      render json: "you do not have the right to access this path", status: :unauthorized
+      render json: "You have to be an administrator or the owner of this account to do this stuff", status: :unauthorized
     end
   end
 

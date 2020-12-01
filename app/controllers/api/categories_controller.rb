@@ -12,8 +12,14 @@ class Api::CategoriesController < ApplicationController
 
   # GET /categories/1
   def show
-    #@formations = Formation.where(categories: @category)
-    render json: @category
+    # Get all formations that belongs to this category 
+    @formations = Array.new
+    @category_formations = FormationCategory.where(category_id: @category.id)
+    @category_formations.each do |category_formation|
+      @formations << category_formation.formation
+    end
+
+    render json: @formations
   end
 
   # POST /categories
@@ -56,7 +62,7 @@ class Api::CategoriesController < ApplicationController
       if current_user.role.name == "admin"
         return true
       else
-        render json: "you do not have the right to access this path", status: :unauthorized
+        render json: "You cannot do this stuff with a non-admin account.", status: :unauthorized
       end
     end
 end
