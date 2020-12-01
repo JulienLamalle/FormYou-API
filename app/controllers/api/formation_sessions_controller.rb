@@ -5,7 +5,7 @@ class Api::FormationSessionsController < ApplicationController
 
   # GET /formation_sessions
   def index
-    @formation_sessions = FormationSession.all
+    @formation_sessions = Formation.find(params[:formation_id]).formation_sessions
 
     render json: @formation_sessions
   end
@@ -20,7 +20,7 @@ class Api::FormationSessionsController < ApplicationController
     @formation_session = FormationSession.new(formation_session_params)
 
     if @formation_session.save
-      render json: @formation_session, status: :created, location: @api_formation_session
+      render json: @formation_session, status: :created, location: @api_formation_formation_session
     else
       render json: @formation_session.errors, status: :unprocessable_entity
     end

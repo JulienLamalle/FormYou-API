@@ -2,16 +2,18 @@ Rails.application.routes.draw do
 
   default_url_options :host => "https://form-you-api-staging.herokuapp.com/"
 
-
   namespace :api, defaults: { format: :json } do
     resources :users
     resources :categories
-    resources :formation_sessions
     resources :formation_attendances
     resources :formation_categories
-    resources :formations
     resources :rooms
     resources :roles
+
+    resources :formations do 
+      resources :formation_sessions
+    end
+
   end
 
   devise_for :users,

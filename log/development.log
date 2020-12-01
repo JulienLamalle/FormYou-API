@@ -11367,3 +11367,190 @@ Migrating to AddTeacherIdToFormationTable (20201201102229)
   [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."teacher_id" = $1[0m  [["teacher_id", 12]]
   [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations" ORDER BY "formations"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/api/login" for 127.0.0.1 at 2020-12-01 14:01:33 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"admin@yopmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"admin@yopmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@yopmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 250ms (Views: 1.8ms | ActiveRecord: 5.8ms | Allocations: 11275)
+
+
+  [1m[36mFormation Load (0.9ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+Started POST "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:02:41 +0100
+Processing by Api::FormationSessionsController#create as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"1", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mJwtDenylist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "0a0edec9-6157-4094-9b7c-7a2d59fdd84a"], ["LIMIT", 1]]
+  [1m[36mRole Load (1.0ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:55:in `is_admin'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Create (1.5ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-11-30 16:24:03"], ["end_date", "2020-11-30 18:24:03"], ["capacity", 20], ["room_id", 1], ["formation_id", 1], ["created_at", "2020-12-01 13:02:42.094863"], ["updated_at", "2020-12-01 13:02:42.094863"]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+Completed 201 Created in 82ms (Views: 2.2ms | ActiveRecord: 18.7ms | Allocations: 28405)
+
+
+Started GET "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:03:23 +0100
+Processing by Api::FormationSessionsController#index as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"1", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mFormationSession Load (0.3ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:10:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 2442)
+
+
+Started GET "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:05:10 +0100
+Processing by Api::FormationSessionsController#index as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"1", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:8:in `index'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 4.0ms | Allocations: 9192)
+
+
+  
+NoMethodError (undefined method `formation_sessions' for #<Formation:0x0000562277c70b88>
+Did you mean?  formation_categories):
+  
+app/controllers/api/formation_sessions_controller.rb:8:in `index'
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" ORDER BY "formations"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations" ORDER BY "formations"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:06:51 +0100
+Processing by Api::FormationSessionsController#index as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"1", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:8:in `index'
+  [1m[36mFormationSession Load (0.6ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:10:in `index'
+Completed 200 OK in 32ms (Views: 10.1ms | ActiveRecord: 7.8ms | Allocations: 13655)
+
+
+Started POST "/api/formations" for 127.0.0.1 at 2020-12-01 14:07:40 +0100
+Processing by Api::FormationsController#create as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"1", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mJwtDenylist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "0a0edec9-6157-4094-9b7c-7a2d59fdd84a"], ["LIMIT", 1]]
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formations_controller.rb:55:in `is_admin'
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.9ms | Allocations: 3960)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: formation):
+  
+app/controllers/api/formations_controller.rb:51:in `formation_params'
+app/controllers/api/formations_controller.rb:20:in `create'
+Started POST "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:07:54 +0100
+Processing by Api::FormationSessionsController#create as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"1", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mJwtDenylist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "0a0edec9-6157-4094-9b7c-7a2d59fdd84a"], ["LIMIT", 1]]
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:55:in `is_admin'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormation Load (0.6ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Create (0.3ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-11-30 16:24:03"], ["end_date", "2020-11-30 18:24:03"], ["capacity", 20], ["room_id", 1], ["formation_id", 1], ["created_at", "2020-12-01 13:07:54.489557"], ["updated_at", "2020-12-01 13:07:54.489557"]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+Completed 201 Created in 51ms (Views: 0.3ms | ActiveRecord: 10.9ms | Allocations: 13210)
+
+
+Started POST "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:11:46 +0100
+Processing by Api::FormationSessionsController#create as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"1", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mJwtDenylist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "0a0edec9-6157-4094-9b7c-7a2d59fdd84a"], ["LIMIT", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:55:in `is_admin'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 1], ["start_date", "2020-11-30 16:24:03"], ["end_date", "2020-11-30 18:24:03"], ["room_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 173ms (Views: 0.2ms | ActiveRecord: 11.0ms | Allocations: 229873)
+
+
+Started POST "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:12:18 +0100
+Processing by Api::FormationSessionsController#create as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"2", "formation_id"=>"1", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mJwtDenylist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "0a0edec9-6157-4094-9b7c-7a2d59fdd84a"], ["LIMIT", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:55:in `is_admin'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormation Load (0.4ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 1], ["start_date", "2020-11-30 16:24:03"], ["end_date", "2020-11-30 18:24:03"], ["room_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Create (0.9ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-11-30 16:24:03"], ["end_date", "2020-11-30 18:24:03"], ["capacity", 20], ["room_id", 2], ["formation_id", 1], ["created_at", "2020-12-01 13:12:18.966116"], ["updated_at", "2020-12-01 13:12:18.966116"]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+Completed 201 Created in 21ms (Views: 0.3ms | ActiveRecord: 9.6ms | Allocations: 9735)
+
+
+Started POST "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:15:09 +0100
+Processing by Api::FormationSessionsController#create as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"2", "formation_id"=>"3", "start_date"=>"2020-11-30 16:24:03", "end_date"=>"2020-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mJwtDenylist Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "0a0edec9-6157-4094-9b7c-7a2d59fdd84a"], ["LIMIT", 1]]
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:55:in `is_admin'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 3], ["start_date", "2020-11-30 16:24:03"], ["end_date", "2020-11-30 18:24:03"], ["room_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 2], ["start_date", "2020-11-30 16:24:03"], ["end_date", "2020-11-30 18:24:03"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 43ms (Views: 0.8ms | ActiveRecord: 10.6ms | Allocations: 25771)
+
+
+Started POST "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-01 14:15:27 +0100
+Processing by Api::FormationSessionsController#create as JSON
+  Parameters: {"formation_session"=>{"room_id"=>"2", "formation_id"=>"3", "start_date"=>"2021-11-30 16:24:03", "end_date"=>"2021-11-30 18:24:03", "capacity"=>"20"}, "formation_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mJwtDenylist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "0a0edec9-6157-4094-9b7c-7a2d59fdd84a"], ["LIMIT", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:55:in `is_admin'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 3], ["start_date", "2021-11-30 16:24:03"], ["end_date", "2021-11-30 18:24:03"], ["room_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 2], ["start_date", "2021-11-30 16:24:03"], ["end_date", "2021-11-30 18:24:03"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[36mFormationSession Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2021-11-30 16:24:03"], ["end_date", "2021-11-30 18:24:03"], ["capacity", 20], ["room_id", 2], ["formation_id", 3], ["created_at", "2020-12-01 13:15:27.388629"], ["updated_at", "2020-12-01 13:15:27.388629"]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/formation_sessions_controller.rb:22:in `create'
+Completed 201 Created in 25ms (Views: 0.6ms | ActiveRecord: 10.1ms | Allocations: 10814)
+
+

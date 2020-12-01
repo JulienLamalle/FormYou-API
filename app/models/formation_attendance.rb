@@ -8,5 +8,4 @@ class FormationAttendance < ApplicationRecord
   # VALIDATIONS
   validates_uniqueness_of :user_id, scope: [:formation_session_id, :formation_id]
 
-
 end
