@@ -5,7 +5,15 @@ class Api::CategoriesController < ApplicationController
 
   # GET /categories
   def index
-    @categories = Category.all
+    if params[:formation_id]
+      @categories = Array.new
+      @category_formations = FormationCategory.where(formation_id: params[:formation_id])
+      @category_formations.each do |category_formation|
+        @categories << category_formation.category
+      end
+    else
+      @categories = Category.all
+    end
 
     render json: @categories
   end

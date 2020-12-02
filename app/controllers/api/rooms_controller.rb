@@ -1,11 +1,19 @@
 class Api::RoomsController < ApplicationController
   before_action :set_room, only: [:show, :update, :destroy]
   before_action :authenticate_user!, only: [:create, :update, :destroy]
-  before_action :is_admin
+  before_action :is_admin, except: [:index, :show]
 
   # GET /rooms
   def index
-    @rooms = Room.all
+    if params[:formation_id]
+      if params[:formation_session_id]
+        @rooms = FormationSession.find(params[:formation_session_id]).room
+      else
+        @rooms = Formation.find(params[:formation_id]).rooms
+      end
+    else
+      @rooms = Room.all
+    end
 
     render json: @rooms
   end

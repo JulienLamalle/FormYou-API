@@ -4,7 +4,13 @@ class Api::UsersController < Api::BaseController
   before_action :is_admin_or_owner, only: [:update, :edit, :destroy, :show]
 
   def index
+    if params[:formation_id]
+      @users = Formation.find(params[:formation_id]).users
+    else
+      @users = User.all
+    end
 
+    render json: @users
   end
 
   def show

@@ -3,11 +3,18 @@ class Api::FormationAttendancesController < ApplicationController
   before_action :authenticate_user!, only: [:create, :update, :destroy]
   before_action :can_i_destroy, only: [:destroy]
   before_action :can_i_update, only: [:update]
-  before_action :is_validated
+  before_action :is_validated, except: [:index, :show]
 
   # GET /formation_attendances
   def index
-    @formation_attendances = FormationAttendance.all
+    if params[:user_id]
+      @formation_attendances = User.find(params[:user_id]).formation_attendances
+    elsif params[:formation_id]
+      @formation_attendances = Formation.find(params[:formation_id]).formation_attendances
+    else
+      
+      @formation_attendances = FormationAttendance.all
+    end
 
     render json: @formation_attendances
   end

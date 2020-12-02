@@ -11871,3 +11871,1216 @@ Filter chain halted as :is_validated rendered or redirected
 Completed 401 Unauthorized in 21ms (Views: 0.4ms | ActiveRecord: 4.7ms | Allocations: 10737)
 
 
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE DATABASE "thp_gram_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "thp_gram_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4374708436360505250)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4374708436360505250)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (2.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.5ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.1ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.1ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.1ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.1ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.1ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.1ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Destroy (0.2ms)[0m  [1m[31mDELETE FROM "roles" WHERE "roles"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormation Load (0.7ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formations" WHERE "formations"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormationSession Load (0.9ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.6ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Destroy (0.4ms)[0m  [1m[31mDELETE FROM "formation_sessions" WHERE "formation_sessions"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormationAttendance Load (1.0ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 9]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_attendances" WHERE "formation_attendances"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFormationCategory Load (0.8ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.1ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "formation_categories" WHERE "formation_categories"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "student"], ["created_at", "2020-12-02 09:40:24.546612"], ["updated_at", "2020-12-02 09:40:24.546612"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.1ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "admin"], ["created_at", "2020-12-02 09:40:24.549448"], ["updated_at", "2020-12-02 09:40:24.549448"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (0.1ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "teacher"], ["created_at", "2020-12-02 09:40:24.551809"], ["updated_at", "2020-12-02 09:40:24.551809"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "guillermina.dooley@bartoletti-mohr.name"], ["first_name", "Mack"], ["last_name", "Gottlieb"], ["age", 52], ["encrypted_password", "$2a$12$NB8IfLGN7MXrOyniGk9Qc.vMzCLMh2xCmvYopFSuoetH.Gddwo6Wy"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:24.873828"], ["updated_at", "2020-12-02 09:40:24.873828"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "christine_fahey@toy.com"], ["first_name", "Patricia"], ["last_name", "Schuppe"], ["age", 60], ["encrypted_password", "$2a$12$Qnu4Y8YoBMKE9B41VHuwA.QakU/qv2lsFdoSzexPjNzmDbAw78dom"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:25.094078"], ["updated_at", "2020-12-02 09:40:25.094078"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "jody@wisoky-hettinger.com"], ["first_name", "Mee"], ["last_name", "Kreiger"], ["age", 35], ["encrypted_password", "$2a$12$.la6BubJvIxtFF80597RlOFViY.OcGmBF5sOu97zo32no5yLqC0Oe"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:25.313402"], ["updated_at", "2020-12-02 09:40:25.313402"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "jess_sipes@mraz.name"], ["first_name", "Dustin"], ["last_name", "Rempel"], ["age", 37], ["encrypted_password", "$2a$12$zVwlI.jsfEsyI7.XkZpQeeUdR9culE7kiXz9nNWwFl0BEjGOcwKAy"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:25.540514"], ["updated_at", "2020-12-02 09:40:25.540514"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "stephen@heathcote.co"], ["first_name", "Carl"], ["last_name", "Bartell"], ["age", 78], ["encrypted_password", "$2a$12$40GwyV7YM7euDenZGBuYxOx3/CVhvAB9HRh5kzb642dLXZ8RWdinK"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:25.760603"], ["updated_at", "2020-12-02 09:40:25.760603"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "rosalee@bayer.net"], ["first_name", "Marketta"], ["last_name", "Lind"], ["age", 64], ["encrypted_password", "$2a$12$eJsHizU.AtecKegTLzEWeucRoCdkqsz0SNel8qhuHy0VAuh6NkhXm"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:25.979629"], ["updated_at", "2020-12-02 09:40:25.979629"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "johnathan@kautzer-vandervort.co"], ["first_name", "Jin"], ["last_name", "Koepp"], ["age", 91], ["encrypted_password", "$2a$12$C0Yd0z35CzZ1VoMW7Z/G/.C8hqpO7MUpN130LsN/izCa4U1uaIWWG"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:26.200403"], ["updated_at", "2020-12-02 09:40:26.200403"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "marylouise_sporer@toy.name"], ["first_name", "Noma"], ["last_name", "Raynor"], ["age", 22], ["encrypted_password", "$2a$12$L1r5H4qWHPIKW5XrCT5XlOI4/wq/7NHSAc.7S/1nK5Em1sV9baz5W"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:26.421790"], ["updated_at", "2020-12-02 09:40:26.421790"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "delicia@ernser.info"], ["first_name", "Earnest"], ["last_name", "Langosh"], ["age", 91], ["encrypted_password", "$2a$12$KGW3Ci9xDBSp3g.PwfPfhuUMPKY7xFoVM4zRIS5AB.yv9R.ET10aO"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:26.643335"], ["updated_at", "2020-12-02 09:40:26.643335"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "cinderella@shanahan.co"], ["first_name", "Janet"], ["last_name", "Greenfelder"], ["age", 35], ["encrypted_password", "$2a$12$Z0fwBtpe4BowknJQ1oNGa.n39KofhcVfB3a3HzP0dq5a.H6EsRpYy"], ["is_validated", true], ["role_id", 1], ["created_at", "2020-12-02 09:40:26.865934"], ["updated_at", "2020-12-02 09:40:26.865934"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" WHERE "roles"."name" = $1 LIMIT $2[0m  [["name", "admin"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "admin@yopmail.com"], ["first_name", "admin"], ["last_name", "admin"], ["age", 84], ["encrypted_password", "$2a$12$lTEHgItM6BwKufpqpH99ye9tGklZim60/oRI7SdRsDNi5lD.7mi46"], ["is_validated", true], ["role_id", 2], ["created_at", "2020-12-02 09:40:27.088934"], ["updated_at", "2020-12-02 09:40:27.088934"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "age", "encrypted_password", "is_validated", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "teacher@yopmail.com"], ["first_name", "teacher"], ["last_name", "teacher"], ["age", 96], ["encrypted_password", "$2a$12$MfBgdqZPGxYGZ9UAMzwb3.xceGSOt95t7LAaaGIA1NPKYdSFoOyt."], ["is_validated", true], ["role_id", 3], ["created_at", "2020-12-02 09:40:27.312846"], ["updated_at", "2020-12-02 09:40:27.312846"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.5ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"repudiandae\", \"aut\", \"autem\", \"quo\", \"autem\", \"id\", \"suscipit\", \"qui\", \"enim\", \"eaque\", \"tenetur\", \"molestiae\", \"deserunt\", \"sapiente\", \"non\", \"ut\", \"rerum\", \"ut\", \"eos\", \"et\"]"], ["created_at", "2020-12-02 09:40:27.320934"], ["updated_at", "2020-12-02 09:40:27.320934"], ["teacher_id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.1ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"dicta\", \"omnis\", \"atque\", \"ea\", \"ea\", \"rem\", \"iusto\", \"voluptatem\", \"sint\", \"error\", \"quia\", \"qui\", \"autem\", \"et\", \"aut\", \"nulla\", \"quas\", \"ipsam\", \"occaecati\", \"corrupti\"]"], ["created_at", "2020-12-02 09:40:27.325844"], ["updated_at", "2020-12-02 09:40:27.325844"], ["teacher_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.2ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"amet\", \"voluptate\", \"excepturi\", \"error\", \"laborum\", \"commodi\", \"numquam\", \"quibusdam\", \"dolor\", \"qui\", \"consectetur\", \"qui\", \"nisi\", \"beatae\", \"enim\", \"harum\", \"nihil\", \"illo\", \"quas\", \"sed\"]"], ["created_at", "2020-12-02 09:40:27.329974"], ["updated_at", "2020-12-02 09:40:27.329974"], ["teacher_id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.2ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"reprehenderit\", \"est\", \"ipsam\", \"quibusdam\", \"asperiores\", \"est\", \"perferendis\", \"sed\", \"provident\", \"nulla\", \"voluptatibus\", \"aliquam\", \"nesciunt\", \"eum\", \"error\", \"consequatur\", \"alias\", \"in\", \"voluptas\", \"animi\"]"], ["created_at", "2020-12-02 09:40:27.334116"], ["updated_at", "2020-12-02 09:40:27.334116"], ["teacher_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.1ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"doloremque\", \"ut\", \"mollitia\", \"et\", \"architecto\", \"qui\", \"earum\", \"eos\", \"voluptatem\", \"occaecati\", \"et\", \"nemo\", \"magnam\", \"sapiente\", \"enim\", \"ut\", \"suscipit\", \"molestias\", \"eum\", \"voluptatem\"]"], ["created_at", "2020-12-02 09:40:27.338020"], ["updated_at", "2020-12-02 09:40:27.338020"], ["teacher_id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.1ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"sit\", \"dolorem\", \"non\", \"alias\", \"quaerat\", \"iure\", \"earum\", \"dolore\", \"blanditiis\", \"ut\", \"aut\", \"voluptates\", \"accusamus\", \"voluptas\", \"qui\", \"corrupti\", \"laudantium\", \"recusandae\", \"consequatur\", \"consequatur\"]"], ["created_at", "2020-12-02 09:40:27.342097"], ["updated_at", "2020-12-02 09:40:27.342097"], ["teacher_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.2ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"recusandae\", \"iste\", \"labore\", \"praesentium\", \"rem\", \"dolorum\", \"ut\", \"ut\", \"omnis\", \"asperiores\", \"necessitatibus\", \"iure\", \"sint\", \"quod\", \"illo\", \"et\", \"est\", \"delectus\", \"nesciunt\", \"et\"]"], ["created_at", "2020-12-02 09:40:27.346807"], ["updated_at", "2020-12-02 09:40:27.346807"], ["teacher_id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.2ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"inventore\", \"sed\", \"dicta\", \"est\", \"molestiae\", \"doloremque\", \"eos\", \"architecto\", \"ipsa\", \"quia\", \"maiores\", \"cumque\", \"ipsum\", \"laboriosam\", \"fuga\", \"sequi\", \"eligendi\", \"esse\", \"a\", \"est\"]"], ["created_at", "2020-12-02 09:40:27.351925"], ["updated_at", "2020-12-02 09:40:27.351925"], ["teacher_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.2ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"officiis\", \"dolores\", \"non\", \"dolor\", \"voluptates\", \"odio\", \"nobis\", \"sit\", \"maxime\", \"rerum\", \"enim\", \"non\", \"voluptatum\", \"incidunt\", \"id\", \"vel\", \"rem\", \"ullam\", \"exercitationem\", \"voluptatem\"]"], ["created_at", "2020-12-02 09:40:27.356437"], ["updated_at", "2020-12-02 09:40:27.356437"], ["teacher_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFormation Create (0.2ms)[0m  [1m[32mINSERT INTO "formations" ("title", "description", "created_at", "updated_at", "teacher_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Super formation"], ["description", "[\"aut\", \"temporibus\", \"sunt\", \"officiis\", \"rerum\", \"sed\", \"aliquam\", \"ducimus\", \"molestias\", \"explicabo\", \"dignissimos\", \"sit\", \"consequatur\", \"enim\", \"sunt\", \"nesciunt\", \"eligendi\", \"ullam\", \"eum\", \"non\"]"], ["created_at", "2020-12-02 09:40:27.360562"], ["updated_at", "2020-12-02 09:40:27.360562"], ["teacher_id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 0"], ["created_at", "2020-12-02 09:40:27.362556"], ["updated_at", "2020-12-02 09:40:27.362556"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.1ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 1"], ["created_at", "2020-12-02 09:40:27.365269"], ["updated_at", "2020-12-02 09:40:27.365269"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.1ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 2"], ["created_at", "2020-12-02 09:40:27.367540"], ["updated_at", "2020-12-02 09:40:27.367540"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 3"], ["created_at", "2020-12-02 09:40:27.369717"], ["updated_at", "2020-12-02 09:40:27.369717"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.1ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 4"], ["created_at", "2020-12-02 09:40:27.372390"], ["updated_at", "2020-12-02 09:40:27.372390"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 5"], ["created_at", "2020-12-02 09:40:27.375014"], ["updated_at", "2020-12-02 09:40:27.375014"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 6"], ["created_at", "2020-12-02 09:40:27.378027"], ["updated_at", "2020-12-02 09:40:27.378027"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 7"], ["created_at", "2020-12-02 09:40:27.381241"], ["updated_at", "2020-12-02 09:40:27.381241"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.2ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 8"], ["created_at", "2020-12-02 09:40:27.384253"], ["updated_at", "2020-12-02 09:40:27.384253"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRoom Create (0.3ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Room formation 9"], ["created_at", "2020-12-02 09:40:27.387122"], ["updated_at", "2020-12-02 09:40:27.387122"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 4], ["start_date", "2020-12-02 09:40:27.391520"], ["end_date", "2020-12-03 09:40:27.391520"], ["room_id", 1], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 1], ["start_date", "2020-12-02 09:40:27.391520"], ["end_date", "2020-12-03 09:40:27.391520"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.391520"], ["end_date", "2020-12-03 09:40:27.391520"], ["capacity", 3], ["room_id", 1], ["formation_id", 4], ["created_at", "2020-12-02 09:40:27.395980"], ["updated_at", "2020-12-02 09:40:27.395980"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 5], ["start_date", "2020-12-02 09:40:27.399369"], ["end_date", "2020-12-03 09:40:27.399369"], ["room_id", 8], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 8], ["start_date", "2020-12-02 09:40:27.399369"], ["end_date", "2020-12-03 09:40:27.399369"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.1ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.399369"], ["end_date", "2020-12-03 09:40:27.399369"], ["capacity", 3], ["room_id", 8], ["formation_id", 5], ["created_at", "2020-12-02 09:40:27.401969"], ["updated_at", "2020-12-02 09:40:27.401969"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 5], ["start_date", "2020-12-02 09:40:27.404821"], ["end_date", "2020-12-03 09:40:27.404821"], ["room_id", 6], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 6], ["start_date", "2020-12-02 09:40:27.404821"], ["end_date", "2020-12-03 09:40:27.404821"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.1ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.404821"], ["end_date", "2020-12-03 09:40:27.404821"], ["capacity", 5], ["room_id", 6], ["formation_id", 5], ["created_at", "2020-12-02 09:40:27.407556"], ["updated_at", "2020-12-02 09:40:27.407556"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 5], ["start_date", "2020-12-02 09:40:27.410896"], ["end_date", "2020-12-03 09:40:27.410896"], ["room_id", 2], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 2], ["start_date", "2020-12-02 09:40:27.410896"], ["end_date", "2020-12-03 09:40:27.410896"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.1ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.410896"], ["end_date", "2020-12-03 09:40:27.410896"], ["capacity", 12], ["room_id", 2], ["formation_id", 5], ["created_at", "2020-12-02 09:40:27.414056"], ["updated_at", "2020-12-02 09:40:27.414056"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 6], ["start_date", "2020-12-02 09:40:27.417405"], ["end_date", "2020-12-03 09:40:27.417405"], ["room_id", 4], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 4], ["start_date", "2020-12-02 09:40:27.417405"], ["end_date", "2020-12-03 09:40:27.417405"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.3ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.417405"], ["end_date", "2020-12-03 09:40:27.417405"], ["capacity", 10], ["room_id", 4], ["formation_id", 6], ["created_at", "2020-12-02 09:40:27.424703"], ["updated_at", "2020-12-02 09:40:27.424703"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 6], ["start_date", "2020-12-02 09:40:27.428070"], ["end_date", "2020-12-03 09:40:27.428070"], ["room_id", 4], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 4], ["start_date", "2020-12-02 09:40:27.428070"], ["end_date", "2020-12-03 09:40:27.428070"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.428070"], ["end_date", "2020-12-03 09:40:27.428070"], ["capacity", 15], ["room_id", 4], ["formation_id", 6], ["created_at", "2020-12-02 09:40:27.431333"], ["updated_at", "2020-12-02 09:40:27.431333"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 3], ["start_date", "2020-12-02 09:40:27.434259"], ["end_date", "2020-12-03 09:40:27.434259"], ["room_id", 9], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 9], ["start_date", "2020-12-02 09:40:27.434259"], ["end_date", "2020-12-03 09:40:27.434259"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.1ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.434259"], ["end_date", "2020-12-03 09:40:27.434259"], ["capacity", 10], ["room_id", 9], ["formation_id", 3], ["created_at", "2020-12-02 09:40:27.436803"], ["updated_at", "2020-12-02 09:40:27.436803"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 4], ["start_date", "2020-12-02 09:40:27.439980"], ["end_date", "2020-12-03 09:40:27.439981"], ["room_id", 1], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 1], ["start_date", "2020-12-02 09:40:27.439980"], ["end_date", "2020-12-03 09:40:27.439981"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.439980"], ["end_date", "2020-12-03 09:40:27.439981"], ["capacity", 7], ["room_id", 1], ["formation_id", 4], ["created_at", "2020-12-02 09:40:27.442938"], ["updated_at", "2020-12-02 09:40:27.442938"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 3], ["start_date", "2020-12-02 09:40:27.446276"], ["end_date", "2020-12-03 09:40:27.446276"], ["room_id", 7], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 7], ["start_date", "2020-12-02 09:40:27.446276"], ["end_date", "2020-12-03 09:40:27.446276"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.446276"], ["end_date", "2020-12-03 09:40:27.446276"], ["capacity", 11], ["room_id", 7], ["formation_id", 3], ["created_at", "2020-12-02 09:40:27.449725"], ["updated_at", "2020-12-02 09:40:27.449725"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationSession Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 AND "formation_sessions"."room_id" = $4 LIMIT $5[0m  [["formation_id", 9], ["start_date", "2020-12-02 09:40:27.453099"], ["end_date", "2020-12-03 09:40:27.453099"], ["room_id", 1], ["LIMIT", 1]]
+  [1m[36mFormationSession Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_sessions" WHERE "formation_sessions"."room_id" = $1 AND "formation_sessions"."start_date" = $2 AND "formation_sessions"."end_date" = $3 LIMIT $4[0m  [["room_id", 1], ["start_date", "2020-12-02 09:40:27.453099"], ["end_date", "2020-12-03 09:40:27.453099"], ["LIMIT", 1]]
+  [1m[36mFormationSession Create (0.3ms)[0m  [1m[32mINSERT INTO "formation_sessions" ("start_date", "end_date", "capacity", "room_id", "formation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start_date", "2020-12-02 09:40:27.453099"], ["end_date", "2020-12-03 09:40:27.453099"], ["capacity", 5], ["room_id", 1], ["formation_id", 9], ["created_at", "2020-12-02 09:40:27.455751"], ["updated_at", "2020-12-02 09:40:27.455751"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 6], ["formation_session_id", 10], ["formation_id", 7], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.6ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 6], ["formation_id", 7], ["formation_session_id", 10], ["created_at", "2020-12-02 09:40:27.462245"], ["updated_at", "2020-12-02 09:40:27.462245"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 7], ["formation_session_id", 8], ["formation_id", 4], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.1ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 7], ["formation_id", 4], ["formation_session_id", 8], ["created_at", "2020-12-02 09:40:27.467815"], ["updated_at", "2020-12-02 09:40:27.467815"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 5], ["formation_session_id", 1], ["formation_id", 4], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["formation_id", 4], ["formation_session_id", 1], ["created_at", "2020-12-02 09:40:27.473650"], ["updated_at", "2020-12-02 09:40:27.473650"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 1], ["formation_session_id", 5], ["formation_id", 4], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["formation_id", 4], ["formation_session_id", 5], ["created_at", "2020-12-02 09:40:27.480344"], ["updated_at", "2020-12-02 09:40:27.480344"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 10], ["formation_session_id", 5], ["formation_id", 6], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 10], ["formation_id", 6], ["formation_session_id", 5], ["created_at", "2020-12-02 09:40:27.485957"], ["updated_at", "2020-12-02 09:40:27.485957"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 9], ["formation_session_id", 1], ["formation_id", 2], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.1ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 9], ["formation_id", 2], ["formation_session_id", 1], ["created_at", "2020-12-02 09:40:27.491972"], ["updated_at", "2020-12-02 09:40:27.491972"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 1], ["formation_session_id", 8], ["formation_id", 6], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.1ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["formation_id", 6], ["formation_session_id", 8], ["created_at", "2020-12-02 09:40:27.497102"], ["updated_at", "2020-12-02 09:40:27.497102"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 9], ["formation_session_id", 3], ["formation_id", 3], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 9], ["formation_id", 3], ["formation_session_id", 3], ["created_at", "2020-12-02 09:40:27.502590"], ["updated_at", "2020-12-02 09:40:27.502590"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.2ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 8], ["formation_session_id", 10], ["formation_id", 8], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.6ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 8], ["formation_id", 8], ["formation_session_id", 10], ["created_at", "2020-12-02 09:40:27.509088"], ["updated_at", "2020-12-02 09:40:27.509088"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationAttendance Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1 AND "formation_attendances"."formation_session_id" = $2 AND "formation_attendances"."formation_id" = $3 LIMIT $4[0m  [["user_id", 4], ["formation_session_id", 10], ["formation_id", 8], ["LIMIT", 1]]
+  [1m[36mFormationAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_attendances" ("user_id", "formation_id", "formation_session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["formation_id", 8], ["formation_session_id", 10], ["created_at", "2020-12-02 09:40:27.518414"], ["updated_at", "2020-12-02 09:40:27.518414"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 0"], ["created_at", "2020-12-02 09:40:27.520548"], ["updated_at", "2020-12-02 09:40:27.520548"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 1"], ["created_at", "2020-12-02 09:40:27.523674"], ["updated_at", "2020-12-02 09:40:27.523674"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 2"], ["created_at", "2020-12-02 09:40:27.526470"], ["updated_at", "2020-12-02 09:40:27.526470"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 3"], ["created_at", "2020-12-02 09:40:27.528941"], ["updated_at", "2020-12-02 09:40:27.528941"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 4"], ["created_at", "2020-12-02 09:40:27.531116"], ["updated_at", "2020-12-02 09:40:27.531116"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 5"], ["created_at", "2020-12-02 09:40:27.533300"], ["updated_at", "2020-12-02 09:40:27.533300"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 6"], ["created_at", "2020-12-02 09:40:27.535476"], ["updated_at", "2020-12-02 09:40:27.535476"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 7"], ["created_at", "2020-12-02 09:40:27.537640"], ["updated_at", "2020-12-02 09:40:27.537640"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 8"], ["created_at", "2020-12-02 09:40:27.539771"], ["updated_at", "2020-12-02 09:40:27.539771"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "category test 9"], ["created_at", "2020-12-02 09:40:27.542548"], ["updated_at", "2020-12-02 09:40:27.542548"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 10], ["category_id", 8], ["created_at", "2020-12-02 09:40:27.548015"], ["updated_at", "2020-12-02 09:40:27.548015"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 4], ["category_id", 5], ["created_at", "2020-12-02 09:40:27.554738"], ["updated_at", "2020-12-02 09:40:27.554738"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 2], ["category_id", 5], ["created_at", "2020-12-02 09:40:27.561143"], ["updated_at", "2020-12-02 09:40:27.561143"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 5], ["category_id", 3], ["created_at", "2020-12-02 09:40:27.566069"], ["updated_at", "2020-12-02 09:40:27.566069"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 7], ["category_id", 1], ["created_at", "2020-12-02 09:40:27.570067"], ["updated_at", "2020-12-02 09:40:27.570067"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (1.0ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 5], ["category_id", 8], ["created_at", "2020-12-02 09:40:27.577640"], ["updated_at", "2020-12-02 09:40:27.577640"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 5], ["category_id", 8], ["created_at", "2020-12-02 09:40:27.584477"], ["updated_at", "2020-12-02 09:40:27.584477"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 7], ["category_id", 10], ["created_at", "2020-12-02 09:40:27.589878"], ["updated_at", "2020-12-02 09:40:27.589878"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 8], ["category_id", 4], ["created_at", "2020-12-02 09:40:27.594859"], ["updated_at", "2020-12-02 09:40:27.594859"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFormationCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "formation_categories" ("formation_id", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["formation_id", 9], ["category_id", 1], ["created_at", "2020-12-02 09:40:27.599505"], ["updated_at", "2020-12-02 09:40:27.599505"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2020-12-02 10:42:34 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.3ms | Allocations: 297)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1542)
+
+
+Started GET "/api/users/1/formation_attendances" for 127.0.0.1 at 2020-12-02 10:42:56 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 799)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/api/formation_attendances_controller.rb:77:in `is_validated'
+Started POST "/api/login" for 127.0.0.1 at 2020-12-02 10:46:49 +0100
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"admin@yopmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"admin@yopmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@yopmail.com"], ["LIMIT", 1]]
+Completed 200 OK in 271ms (Views: 1.7ms | ActiveRecord: 2.9ms | Allocations: 11238)
+
+
+Started GET "/api/users/1/formation_attendances" for 127.0.0.1 at 2020-12-02 10:47:18 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:77:in `is_validated'
+  [1m[36mJwtDenylist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "8734d8d8-9d14-42f5-950e-b8846d213f36"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:77:in `is_validated'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:77:in `is_validated'
+  [1m[36mFormationAttendance Load (0.3ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances"[0m
+  ↳ app/controllers/api/formation_attendances_controller.rb:12:in `index'
+Completed 200 OK in 41ms (Views: 9.7ms | ActiveRecord: 5.0ms | Allocations: 15846)
+
+
+Started GET "/api/users/1/formation_attendances" for 127.0.0.1 at 2020-12-02 10:47:57 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:78:in `is_validated'
+  [1m[36mJwtDenylist Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "8734d8d8-9d14-42f5-950e-b8846d213f36"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:78:in `is_validated'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:78:in `is_validated'
+  [1m[36mFormationAttendance Load (1.3ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances"[0m
+  ↳ app/controllers/api/formation_attendances_controller.rb:13:in `index'
+Completed 200 OK in 47ms (Views: 7.7ms | ActiveRecord: 8.8ms | Allocations: 15645)
+
+
+Started GET "/api/users/1/formation_attendances" for 127.0.0.1 at 2020-12-02 10:48:18 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:78:in `is_validated'
+  [1m[36mJwtDenylist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "8734d8d8-9d14-42f5-950e-b8846d213f36"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:78:in `is_validated'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:78:in `is_validated'
+  [1m[36mFormationAttendance Load (1.1ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances"[0m
+  ↳ app/controllers/api/formation_attendances_controller.rb:13:in `index'
+Completed 200 OK in 43ms (Views: 10.0ms | ActiveRecord: 7.3ms | Allocations: 15668)
+
+
+Started GET "/api/users/1/formation_attendances" for 127.0.0.1 at 2020-12-02 10:49:23 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mJwtDenylist Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "8734d8d8-9d14-42f5-950e-b8846d213f36"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:11:in `index'
+  [1m[36mFormationAttendance Load (0.2ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:16:in `index'
+Completed 200 OK in 60ms (Views: 13.5ms | ActiveRecord: 8.9ms | Allocations: 17469)
+
+
+Started GET "/api/users/2/formation_attendances" for 127.0.0.1 at 2020-12-02 10:49:31 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mJwtDenylist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "8734d8d8-9d14-42f5-950e-b8846d213f36"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:11:in `index'
+  [1m[36mFormationAttendance Load (0.2ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:16:in `index'
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 0.8ms | Allocations: 3746)
+
+
+Started GET "/api/users/3/formation_attendances" for 127.0.0.1 at 2020-12-02 10:49:36 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mJwtDenylist Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "8734d8d8-9d14-42f5-950e-b8846d213f36"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:11:in `index'
+  [1m[36mFormationAttendance Load (0.2ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:16:in `index'
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 1.4ms | Allocations: 3744)
+
+
+Started GET "/api/users/4/formation_attendances" for 127.0.0.1 at 2020-12-02 10:49:41 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"user_id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mJwtDenylist Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "jwt_denylist" WHERE "jwt_denylist"."jti" = $1 LIMIT $2[0m  [["jti", "8734d8d8-9d14-42f5-950e-b8846d213f36"], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:81:in `is_validated'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:11:in `index'
+  [1m[36mFormationAttendance Load (0.3ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances" WHERE "formation_attendances"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:16:in `index'
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 1.4ms | Allocations: 3858)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-12-02 10:53:21 +0100
+Processing by Api::UsersController#index as JSON
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 122)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-12-02 10:54:02 +0100
+Processing by Api::UsersController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 4.5ms | Allocations: 9972)
+
+
+Started GET "/api/formation/1/users" for 127.0.0.1 at 2020-12-02 10:54:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/formation/1/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/formations/1/users" for 127.0.0.1 at 2020-12-02 10:55:05 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/users_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 2.0ms | Allocations: 9921)
+
+
+Started GET "/api/formations/1/users" for 127.0.0.1 at 2020-12-02 10:56:23 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.6ms | Allocations: 7927)
+
+
+  
+ActiveRecord::HasManyThroughAssociationNotFoundError (Could not find the association :formation_attendances in model Formation):
+  
+app/controllers/api/users_controller.rb:8:in `index'
+Started GET "/api/formations/1/users" for 127.0.0.1 at 2020-12-02 10:57:21 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.8ms | Allocations: 9727)
+
+
+  
+NoMethodError (undefined method `formation_attendances' for #<Formation:0x00007fb2e85a03f0>
+Did you mean?  formations_attendances
+               formations_attendances=
+               formations_attendance_ids
+               formations_attendance_ids=):
+  
+app/controllers/api/users_controller.rb:8:in `index'
+Started GET "/api/formations/1/users" for 127.0.0.1 at 2020-12-02 10:57:37 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 3.9ms | Allocations: 7248)
+
+
+  
+NameError (uninitialized constant Formation::FormationsAttendance):
+  
+app/controllers/api/users_controller.rb:8:in `index'
+Started GET "/api/formations/1/users" for 127.0.0.1 at 2020-12-02 10:58:55 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.9ms | Allocations: 7184)
+
+
+  
+ActiveRecord::HasManyThroughAssociationNotFoundError (Could not find the association :formation_attendances in model Formation):
+  
+app/controllers/api/users_controller.rb:8:in `index'
+Started GET "/api/formations/1/users" for 127.0.0.1 at 2020-12-02 10:59:18 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.3ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 1.1ms | ActiveRecord: 6.5ms | Allocations: 7226)
+
+
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" ORDER BY "formations"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "formation_categories" ON "categories"."id" = "formation_categories"."category_id" WHERE "formation_categories"."formation_id" = $1 LIMIT $2[0m  [["formation_id", 1], ["LIMIT", 11]]
+  [1m[36mFormation Load (0.3ms)[0m  [1m[34mSELECT "formations".* FROM "formations" ORDER BY "formations"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/formations/1/users" for 127.0.0.1 at 2020-12-02 11:00:53 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "formation_attendances" ON "users"."id" = "formation_attendances"."user_id" WHERE "formation_attendances"."formation_id" = $1[0m  [["formation_id", 1]]
+  ↳ app/controllers/api/users_controller.rb:13:in `index'
+Completed 200 OK in 48ms (Views: 8.8ms | ActiveRecord: 12.8ms | Allocations: 11073)
+
+
+Started GET "/api/formations/2/users" for 127.0.0.1 at 2020-12-02 11:00:58 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"2"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "formation_attendances" ON "users"."id" = "formation_attendances"."user_id" WHERE "formation_attendances"."formation_id" = $1[0m  [["formation_id", 2]]
+  ↳ app/controllers/api/users_controller.rb:13:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.4ms | Allocations: 8045)
+
+
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "formation_attendances" ON "users"."id" = "formation_attendances"."user_id" WHERE "formation_attendances"."formation_id" = $1[0m  [["formation_id", 2]]
+Started GET "/api/users" for 127.0.0.1 at 2020-12-02 11:02:12 +0100
+Processing by Api::UsersController#index as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/users_controller.rb:13:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 2985)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2020-12-02 11:03:28 +0100
+Processing by Api::UsersController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/users_controller.rb:13:in `index'
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 2.6ms | Allocations: 9936)
+
+
+Started GET "/api/formations/2/users" for 127.0.0.1 at 2020-12-02 11:03:38 +0100
+Processing by Api::UsersController#index as JSON
+  Parameters: {"formation_id"=>"2"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "formation_attendances" ON "users"."id" = "formation_attendances"."user_id" WHERE "formation_attendances"."formation_id" = $1[0m  [["formation_id", 2]]
+  ↳ app/controllers/api/users_controller.rb:13:in `index'
+Completed 200 OK in 21ms (Views: 2.8ms | ActiveRecord: 4.2ms | Allocations: 9858)
+
+
+Started GET "/api/formations/2/formation_sessions" for 127.0.0.1 at 2020-12-02 11:03:52 +0100
+Processing by Api::FormationSessionsController#index as JSON
+  Parameters: {"formation_id"=>"2"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:8:in `index'
+  [1m[36mFormationSession Load (0.2ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 2]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 1.2ms | Allocations: 4226)
+
+
+Started GET "/api/formations/1/formation_sessions" for 127.0.0.1 at 2020-12-02 11:03:57 +0100
+Processing by Api::FormationSessionsController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:8:in `index'
+  [1m[36mFormationSession Load (0.3ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.6ms | Allocations: 1525)
+
+
+Started GET "/api/formations/3/formation_sessions" for 127.0.0.1 at 2020-12-02 11:04:00 +0100
+Processing by Api::FormationSessionsController#index as JSON
+  Parameters: {"formation_id"=>"3"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:8:in `index'
+  [1m[36mFormationSession Load (0.2ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 3]]
+  ↳ app/controllers/api/formation_sessions_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.1ms | Allocations: 5770)
+
+
+Started GET "/api/roles" for 127.0.0.1 at 2020-12-02 11:07:43 +0100
+Processing by Api::RolesController#index as JSON
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 686)
+
+
+  
+NoMethodError (undefined method `role' for nil:NilClass):
+  
+app/controllers/api/roles_controller.rb:55:in `is_admin'
+Started GET "/api/roles" for 127.0.0.1 at 2020-12-02 11:09:06 +0100
+Processing by Api::RolesController#index as JSON
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ app/controllers/api/roles_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 2.3ms | Allocations: 4038)
+
+
+Started GET "/api/formations/1/rooms" for 127.0.0.1 at 2020-12-02 11:09:38 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 686)
+
+
+  
+NoMethodError (undefined method `role' for nil:NilClass):
+  
+app/controllers/api/rooms_controller.rb:59:in `is_admin'
+Started GET "/api/formations/1/rooms" for 127.0.0.1 at 2020-12-02 11:10:40 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.3ms | Allocations: 9552)
+
+
+  
+NoMethodError (undefined method `room' for #<Formation:0x00007fb2e82f62f8>
+Did you mean?  rooms):
+  
+app/controllers/api/rooms_controller.rb:9:in `index'
+Started GET "/api/formations/1/rooms" for 127.0.0.1 at 2020-12-02 11:10:52 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:9:in `index'
+  [1m[36mRoom Load (2.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "formation_sessions" ON "rooms"."id" = "formation_sessions"."room_id" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:14:in `index'
+Completed 200 OK in 35ms (Views: 8.7ms | ActiveRecord: 9.8ms | Allocations: 13370)
+
+
+Started GET "/api/formations/2/rooms" for 127.0.0.1 at 2020-12-02 11:10:58 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"2"}
+  [1m[36mFormation Load (0.3ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:9:in `index'
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "formation_sessions" ON "rooms"."id" = "formation_sessions"."room_id" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 2]]
+  ↳ app/controllers/api/rooms_controller.rb:14:in `index'
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.6ms | Allocations: 1709)
+
+
+Started GET "/api/formations/3/rooms" for 127.0.0.1 at 2020-12-02 11:11:02 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"3"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:9:in `index'
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "formation_sessions" ON "rooms"."id" = "formation_sessions"."room_id" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 3]]
+  ↳ app/controllers/api/rooms_controller.rb:14:in `index'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 3704)
+
+
+Started GET "/api/formations/3/rooms" for 127.0.0.1 at 2020-12-02 11:14:09 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"3"}
+  [1m[36mFormation Load (0.5ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:9:in `index'
+  [1m[36mRoom Load (1.8ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "formation_sessions" ON "rooms"."id" = "formation_sessions"."room_id" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 3]]
+  ↳ app/controllers/api/rooms_controller.rb:14:in `index'
+Completed 200 OK in 34ms (Views: 9.7ms | ActiveRecord: 9.1ms | Allocations: 15325)
+
+
+  [1m[36mFormationSession Load (0.4ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions"[0m
+Started GET "/api/formations/3/formtion_sessions/7/rooms" for 127.0.0.1 at 2020-12-02 11:16:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/formations/3/formtion_sessions/7/rooms"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/formations/3/formation_sessions/7/rooms" for 127.0.0.1 at 2020-12-02 11:16:21 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"3", "formation_session_id"=>"7"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:9:in `index'
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "formation_sessions" ON "rooms"."id" = "formation_sessions"."room_id" WHERE "formation_sessions"."formation_id" = $1[0m  [["formation_id", 3]]
+  ↳ app/controllers/api/rooms_controller.rb:14:in `index'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 1897)
+
+
+Started GET "/api/formations/3/formation_sessions/7/rooms" for 127.0.0.1 at 2020-12-02 11:18:30 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"3", "formation_session_id"=>"7"}
+  [1m[36mFormationSession Load (0.2ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:10:in `index'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.9ms | Allocations: 9474)
+
+
+  
+NoMethodError (undefined method `rooms' for #<FormationSession:0x00007fb2e8715e38>
+Did you mean?  room
+               room=):
+  
+app/controllers/api/rooms_controller.rb:10:in `index'
+Started GET "/api/formations/3/formation_sessions/7/rooms" for 127.0.0.1 at 2020-12-02 11:18:32 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"3", "formation_session_id"=>"7"}
+  [1m[36mFormationSession Load (0.2ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:10:in `index'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 3040)
+
+
+  
+NoMethodError (undefined method `rooms' for #<FormationSession:0x00007fb2e8485ec0>
+Did you mean?  room
+               room=):
+  
+app/controllers/api/rooms_controller.rb:10:in `index'
+Started GET "/api/formations/3/formation_sessions/7/rooms" for 127.0.0.1 at 2020-12-02 11:18:33 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"3", "formation_session_id"=>"7"}
+  [1m[36mFormationSession Load (0.7ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:10:in `index'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms | Allocations: 3038)
+
+
+  
+NoMethodError (undefined method `rooms' for #<FormationSession:0x00007fb2d0074fb0>
+Did you mean?  room
+               room=):
+  
+app/controllers/api/rooms_controller.rb:10:in `index'
+Started GET "/api/formations/3/formation_sessions/7/rooms" for 127.0.0.1 at 2020-12-02 11:18:45 +0100
+Processing by Api::RoomsController#index as JSON
+  Parameters: {"formation_id"=>"3", "formation_session_id"=>"7"}
+  [1m[36mFormationSession Load (0.1ms)[0m  [1m[34mSELECT "formation_sessions".* FROM "formation_sessions" WHERE "formation_sessions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:10:in `index'
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/rooms_controller.rb:10:in `index'
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 9.9ms | Allocations: 12159)
+
+
+Started GET "/api/formations/3/categories" for 127.0.0.1 at 2020-12-02 11:22:37 +0100
+Processing by Api::CategoriesController#index as JSON
+  Parameters: {"formation_id"=>"3"}
+  [1m[36mFormationCategory Load (0.2ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."formation_id" = $1[0m  [["formation_id", 3]]
+  ↳ app/controllers/api/categories_controller.rb:11:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 1660)
+
+
+Started GET "/api/formations/4/categories" for 127.0.0.1 at 2020-12-02 11:22:41 +0100
+Processing by Api::CategoriesController#index as JSON
+  Parameters: {"formation_id"=>"4"}
+  [1m[36mFormationCategory Load (0.2ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."formation_id" = $1[0m  [["formation_id", 4]]
+  ↳ app/controllers/api/categories_controller.rb:11:in `index'
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/categories_controller.rb:12:in `block in index'
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 10448)
+
+
+Started GET "/api/formations/4/categories" for 127.0.0.1 at 2020-12-02 11:23:15 +0100
+Processing by Api::CategoriesController#index as JSON
+  Parameters: {"formation_id"=>"4"}
+  [1m[36mFormationCategory Load (0.3ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."formation_id" = $1[0m  [["formation_id", 4]]
+  ↳ app/controllers/api/categories_controller.rb:11:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/categories_controller.rb:12:in `block in index'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 6.4ms | Allocations: 8216)
+
+
+Started GET "/api/formations/1/categories" for 127.0.0.1 at 2020-12-02 11:23:23 +0100
+Processing by Api::CategoriesController#index as JSON
+  Parameters: {"formation_id"=>"1"}
+  [1m[36mFormationCategory Load (1.1ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."formation_id" = $1[0m  [["formation_id", 1]]
+  ↳ app/controllers/api/categories_controller.rb:11:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 749)
+
+
+Started GET "/api/formations/2/categories" for 127.0.0.1 at 2020-12-02 11:23:27 +0100
+Processing by Api::CategoriesController#index as JSON
+  Parameters: {"formation_id"=>"2"}
+  [1m[36mFormationCategory Load (0.3ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."formation_id" = $1[0m  [["formation_id", 2]]
+  ↳ app/controllers/api/categories_controller.rb:11:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/categories_controller.rb:12:in `block in index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1548)
+
+
+Started GET "/api/formations/3/categories" for 127.0.0.1 at 2020-12-02 11:23:30 +0100
+Processing by Api::CategoriesController#index as JSON
+  Parameters: {"formation_id"=>"3"}
+  [1m[36mFormationCategory Load (0.2ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."formation_id" = $1[0m  [["formation_id", 3]]
+  ↳ app/controllers/api/categories_controller.rb:11:in `index'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 748)
+
+
+Started GET "/api/formations/4/categories" for 127.0.0.1 at 2020-12-02 11:23:36 +0100
+Processing by Api::CategoriesController#index as JSON
+  Parameters: {"formation_id"=>"4"}
+  [1m[36mFormationCategory Load (0.2ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."formation_id" = $1[0m  [["formation_id", 4]]
+  ↳ app/controllers/api/categories_controller.rb:11:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/categories_controller.rb:12:in `block in index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1548)
+
+
+  [1m[36mFormationCategory Load (0.5ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories"[0m
+Started GET "/api/categories/4" for 127.0.0.1 at 2020-12-02 11:26:10 +0100
+Processing by Api::CategoriesController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/categories_controller.rb:61:in `set_category'
+  [1m[36mFormationCategory Load (0.1ms)[0m  [1m[34mSELECT "formation_categories".* FROM "formation_categories" WHERE "formation_categories"."category_id" = $1[0m  [["category_id", 4]]
+  ↳ app/controllers/api/categories_controller.rb:26:in `show'
+  [1m[36mFormation Load (0.1ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/categories_controller.rb:27:in `block in show'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 10129)
+
+
+Started GET "/api/formations/4/formations_attendances" for 127.0.0.1 at 2020-12-02 11:33:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/formations/4/formations_attendances"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/formations/4/formations_attendances" for 127.0.0.1 at 2020-12-02 11:33:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/formations/4/formations_attendances"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/formations/4/formation_attendances" for 127.0.0.1 at 2020-12-02 11:33:58 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"formation_id"=>"4"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 749)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/api/formation_attendances_controller.rb:84:in `is_validated'
+Started GET "/api/formations/4/formation_attendances" for 127.0.0.1 at 2020-12-02 11:34:52 +0100
+Processing by Api::FormationAttendancesController#index as JSON
+  Parameters: {"formation_id"=>"4"}
+  [1m[36mFormation Load (0.2ms)[0m  [1m[34mSELECT "formations".* FROM "formations" WHERE "formations"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:13:in `index'
+  [1m[36mFormationAttendance Load (1.2ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances" WHERE "formation_attendances"."formation_id" = $1[0m  [["formation_id", 4]]
+  ↳ app/controllers/api/formation_attendances_controller.rb:19:in `index'
+Completed 200 OK in 36ms (Views: 10.6ms | ActiveRecord: 13.4ms | Allocations: 13298)
+
+
+  [1m[36mFormationAttendance Load (0.4ms)[0m  [1m[34mSELECT "formation_attendances".* FROM "formation_attendances"[0m
