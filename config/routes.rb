@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
 
     resources :formations do 
-      resources :formation_sessions, only: [:index] do 
+      resources :formation_sessions, only: [:index, :create] do 
         resources :rooms, only: [:index]
       end
       resources :users, only: [:index]
