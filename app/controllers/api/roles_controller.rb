@@ -1,7 +1,7 @@
 class Api::RolesController < ApplicationController
   before_action :set_role, only: [:show, :update, :destroy]
   before_action :authenticate_user!, only: [:create, :update, :destroy]
-  before_action :is_admin
+  before_action :is_admin, except: [:index]
 
   # GET /roles
   def index

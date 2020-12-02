@@ -10,11 +10,24 @@ Rails.application.routes.draw do
     resources :rooms
     resources :roles
 
+    resources :users do
+      resources :formation_attendances, only: [:index]
+    end
+
+
     resources :formations do 
-      resources :formation_sessions
+      resources :formation_sessions, only: [:index] do 
+        resources :rooms, only: [:index]
+      end
+      resources :users, only: [:index]
+      resources :rooms, only: [:index]
+      resources :categories, only: [:index]
+      resources :formation_attendances, only: [:index]
     end
 
   end
+
+
 
   devise_for :users,
     defaults: { format: :json },
