@@ -18,6 +18,7 @@ class Api::FormationSessionsController < ApplicationController
   # POST /formation_sessions
   def create
     @formation_session = FormationSession.new(formation_session_params)
+    @formation_session.formation = Formation.find(params[:formation_id])
 
     if @formation_session.save
       render json: @formation_session, status: :created, location: @api_formation_formation_session
