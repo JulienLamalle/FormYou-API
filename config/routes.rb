@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :formation_categories
     resources :rooms
     resources :roles
+    resources :formation_sessions
 
     resources :users do
       resources :formation_attendances, only: [:index]
