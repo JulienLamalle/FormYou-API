@@ -5,7 +5,11 @@ class Api::RolesController < ApplicationController
 
   # GET /roles
   def index
-    @roles = Role.all
+    if params[:user_id]
+      @roles = Role.find(User.find(params[:user_id]).role_id)
+    else
+      @roles = Role.all
+    end
 
     render json: @roles
   end

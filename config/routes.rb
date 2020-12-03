@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
     resources :users do
       resources :formation_attendances, only: [:index]
+      resources :roles, only: [:index]
     end
 
 
