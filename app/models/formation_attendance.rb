@@ -2,7 +2,7 @@ class FormationAttendance < ApplicationRecord
 
   # ASSOCIATIONS
   belongs_to :user
-  belongs_to :formation, :dependent => :destroy
+  belongs_to :formation, :dependent => :delete
   belongs_to :formation_session
 
   # VALIDATIONS
