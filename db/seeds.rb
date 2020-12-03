@@ -86,7 +86,4 @@ end
 
 10.times do |i|
   FormationCategory.create(category:Category.all.sample, formation:Formation.all.sample)
-end 
-
-
-
+end
