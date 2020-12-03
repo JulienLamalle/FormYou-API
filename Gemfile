@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
+ruby '2.7.1'
 
 gem 'devise-jwt', '~> 0.7.0'
 gem 'dotenv-rails'
@@ -10,7 +10,7 @@ gem 'jsonapi-rails'
 gem 'table_print'
 gem 'activerecord-reset-pk-sequence'
 
-# generating fake datas 
+# generating fake datas
 gem 'faker'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
